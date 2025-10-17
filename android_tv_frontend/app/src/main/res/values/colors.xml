@@ -1,0 +1,13 @@
+<resources>
+    <color name="op_primary">#2563EB</color>
+    <color name="op_secondary">#F59E0B</color>
+    <color name="op_success">#F59E0B</color>
+    <color name="op_error">#EF4444</color>
+    <color name="op_background">#f9fafb</color>
+    <color name="op_surface">#ffffff</color>
+    <color name="op_text">#111827</color>
+
+    <!-- Focus and ripple helper colors -->
+    <color name="focus_glow">#332563EB</color>
+    <color name="card_shadow">#14000000</color>
+</resources>

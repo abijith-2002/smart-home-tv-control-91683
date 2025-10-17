@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+    <!-- Background surface -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,0h320v180h-320z" />
+    <!-- Subtle ocean gradient effect using rectangles -->
+    <path
+        android:fillColor="#2563EB"
+        android:fillAlpha="0.10"
+        android:pathData="M0,0h320v90h-320z" />
+    <path
+        android:fillColor="#F59E0B"
+        android:fillAlpha="0.08"
+        android:pathData="M0,90h320v90h-320z" />
+    <!-- App title placeholder -->
+    <group android:translateX="20" android:translateY="100">
+        <path
+            android:fillColor="#111827"
+            android:pathData="M0,0h200v14h-200z" />
+        <path
+            android:fillColor="#2563EB"
+            android:pathData="M0,-22h140v10h-140z" />
+    </group>
+</vector>

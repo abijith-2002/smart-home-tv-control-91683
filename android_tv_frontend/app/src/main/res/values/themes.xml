@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.SmartHomeTV" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/op_primary</item>
+        <item name="colorPrimaryContainer">@color/op_primary</item>
+        <item name="colorSecondary">@color/op_secondary</item>
+        <item name="colorError">@color/op_error</item>
+        <item name="android:colorBackground">@color/op_background</item>
+        <item name="android:textColor">@color/op_text</item>
+
+        <item name="android:navigationBarColor">@color/op_background</item>
+        <item name="android:statusBarColor">@color/op_background</item>
+
+        <item name="materialCardViewStyle">@style/SmartCard</item>
+        <item name="android:textViewStyle">@style/TVDefaultText</item>
+    </style>
+
+    <style name="SmartCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/op_surface</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <style name="SidebarItem">
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@color/op_text</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TVDefaultText" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/op_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>
