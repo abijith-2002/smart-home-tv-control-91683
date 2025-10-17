@@ -53,8 +53,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupSidebar() {
         val focusBg = ContextCompat.getColor(this, R.color.focus_glow)
-        val primary = ContextCompat.getColor(this, R.color.op_primary)
-        val textColor = ContextCompat.getColor(this, R.color.op_text)
+        val primary = ContextCompat.getColor(this, R.color.colorPrimary)
+        val textColor = ContextCompat.getColor(this, R.color.colorOnBackground)
 
         val highlight: (TextView) -> Unit = { tv ->
             tv.setBackgroundColor(focusBg)

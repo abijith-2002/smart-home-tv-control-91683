@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="@color/op_background">
+    android:background="@color/colorBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:src="@android:drawable/btn_star_big_on"
-                        app:tint="@color/op_text" />
+                        app:tint="@color/colorOnSurface" />
 
                     <TextView
                         android:id="@+id/labelLight"
@@ -50,7 +50,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="@string/device_light"
-                        android:textColor="@color/op_text"
+                        android:textColor="@color/colorOnSurface"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -80,7 +80,7 @@
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:src="@android:drawable/ic_media_play"
-                        app:tint="@color/op_text" />
+                        app:tint="@color/colorOnSurface" />
 
                     <TextView
                         android:id="@+id/labelFan"
@@ -88,7 +88,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="@string/device_fan"
-                        android:textColor="@color/op_text"
+                        android:textColor="@color/colorOnSurface"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -116,7 +116,7 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:src="@android:drawable/ic_dialog_info"
-                    app:tint="@color/op_text" />
+                    app:tint="@color/colorOnSurface" />
 
                 <TextView
                     android:id="@+id/labelAC"
@@ -124,7 +124,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:text="@string/device_ac"
-                    android:textColor="@color/op_text"
+                    android:textColor="@color/colorOnSurface"
                     android:textSize="18sp"
                     android:textStyle="bold" />
             </LinearLayout>

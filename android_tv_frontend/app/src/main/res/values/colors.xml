@@ -1,13 +1,47 @@
 <resources>
-    <color name="op_primary">#2563EB</color>
-    <color name="op_secondary">#F59E0B</color>
-    <color name="op_success">#F59E0B</color>
-    <color name="op_error">#EF4444</color>
-    <color name="op_background">#f9fafb</color>
-    <color name="op_surface">#ffffff</color>
-    <color name="op_text">#111827</color>
+    <!-- Nord palette -->
+    <color name="nord0">#2E3440</color>
+    <color name="nord1">#3B4252</color>
+    <color name="nord2">#434C5E</color>
+    <color name="nord3">#4C566A</color>
+    <color name="nord4">#D8DEE9</color>
+    <color name="nord5">#E5E9F0</color>
+    <color name="nord6">#ECEFF4</color>
+    <color name="nord7">#8FBCBB</color>
+    <color name="nord8">#88C0D0</color>
+    <color name="nord9">#81A1C1</color>
+    <color name="nord10">#5E81AC</color>
+    <color name="nord11">#BF616A</color>
+    <color name="nord12">#D08770</color>
+    <color name="nord13">#EBCB8B</color>
+    <color name="nord14">#A3BE8C</color>
+    <color name="nord15">#B48EAD</color>
 
-    <!-- Focus and ripple helper colors -->
-    <color name="focus_glow">#332563EB</color>
+    <!-- Semantic app colors mapped to Nord -->
+    <color name="colorPrimary">@color/nord9</color>
+    <color name="colorPrimaryVariant">@color/nord10</color>
+    <color name="colorSecondary">@color/nord13</color>
+    <color name="colorSecondaryVariant">@color/nord7</color>
+    <color name="colorSurface">@color/nord1</color>
+    <color name="colorSurfaceVariant">@color/nord2</color>
+    <color name="colorBackground">@color/nord0</color>
+    <color name="colorOnPrimary">@color/nord6</color>
+    <color name="colorOnSecondary">@color/nord6</color>
+    <color name="colorOnSurface">@color/nord4</color>
+    <color name="colorOnBackground">@color/nord4</color>
+    <color name="colorError">@color/nord11</color>
+
+    <!-- Backwards compatibility aliases for existing refs -->
+    <color name="op_primary">@color/colorPrimary</color>
+    <color name="op_secondary">@color/colorSecondary</color>
+    <color name="op_success">@color/nord14</color>
+    <color name="op_error">@color/colorError</color>
+    <color name="op_background">@color/colorBackground</color>
+    <color name="op_surface">@color/colorSurface</color>
+    <color name="op_text">@color/colorOnBackground</color>
+
+    <!-- Focus and ripple helper colors tuned for TV contrast -->
+    <!-- Semi-transparent glow using primary to ensure good contrast on dark bg -->
+    <color name="focus_glow">#6681A1C1</color>
     <color name="card_shadow">#14000000</color>
 </resources>

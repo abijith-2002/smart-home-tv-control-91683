@@ -41,10 +41,10 @@ class SettingsFragment : Fragment() {
             tv.setOnFocusChangeListener { v, hasFocus ->
                 if (hasFocus) {
                     v.setBackgroundColor(requireContext().getColor(R.color.focus_glow))
-                    (v as TextView).setTextColor(requireContext().getColor(R.color.op_primary))
+                    (v as TextView).setTextColor(requireContext().getColor(R.color.colorPrimary))
                 } else {
                     v.setBackgroundColor(0x00000000)
-                    (v as TextView).setTextColor(requireContext().getColor(R.color.op_text))
+                    (v as TextView).setTextColor(requireContext().getColor(R.color.colorOnBackground))
                 }
             }
         }

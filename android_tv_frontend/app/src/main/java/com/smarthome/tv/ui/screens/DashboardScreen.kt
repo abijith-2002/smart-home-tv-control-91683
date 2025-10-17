@@ -104,7 +104,7 @@ class DashboardFragment : Fragment() {
         context: Context
     ) {
         label.text = "$title • ${if (isOn) "On" else "Off"}"
-        val color = if (isOn) R.color.op_secondary else R.color.op_text
+        val color = if (isOn) R.color.colorSecondary else R.color.colorOnSurface
         label.setTextColor(context.getColor(color))
         icon.imageTintList = android.content.res.ColorStateList.valueOf(context.getColor(color))
     }
