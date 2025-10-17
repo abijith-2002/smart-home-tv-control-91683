@@ -1,1 +1,3 @@
-# smart-home-tv-control-91683
+# Project Repository
+
+This is the initial README file for the project.
