@@ -18,9 +18,9 @@
     <color name="nord15">#B48EAD</color>
 
     <!-- Semantic app colors mapped to Nord -->
-    <color name="colorPrimary">@color/nord9</color>
-    <color name="colorPrimaryVariant">@color/nord10</color>
-    <color name="colorSecondary">@color/nord13</color>
+    <color name="colorPrimary">@color/nord8</color>
+    <color name="colorPrimaryVariant">@color/nord9</color>
+    <color name="colorSecondary">@color/nord9</color>
     <color name="colorSecondaryVariant">@color/nord7</color>
     <color name="colorSurface">@color/nord1</color>
     <color name="colorSurfaceVariant">@color/nord2</color>
@@ -30,6 +30,8 @@
     <color name="colorOnSurface">@color/nord4</color>
     <color name="colorOnBackground">@color/nord4</color>
     <color name="colorError">@color/nord11</color>
+    <color name="colorSuccess">@color/nord14</color>
+    <color name="colorWarning">@color/nord13</color>
 
     <!-- Backwards compatibility aliases for existing refs -->
     <color name="op_primary">@color/colorPrimary</color>
@@ -42,6 +44,7 @@
 
     <!-- Focus and ripple helper colors tuned for TV contrast -->
     <!-- Semi-transparent glow using primary to ensure good contrast on dark bg -->
-    <color name="focus_glow">#6681A1C1</color>
+    <color name="focus_glow">#6688C0D0</color>
+    <color name="focus_border">#88C0D0</color>
     <color name="card_shadow">#14000000</color>
 </resources>

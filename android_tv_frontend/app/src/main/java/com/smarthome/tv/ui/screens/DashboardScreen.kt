@@ -1,6 +1,7 @@
 package com.smarthome.tv.ui.screens
 
 import android.content.Context
+import android.content.res.ColorStateList
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
+import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import com.smarthome.tv.R
 
@@ -40,15 +42,20 @@ class DashboardFragment : Fragment() {
             card.isClickable = true
             updateCardUI(card, label, icon, title, isOn, requireContext())
 
+            // Typography (Figtree)
+            val typeface = ResourcesCompat.getFont(requireContext(), R.font.figtree_family_medium)
+            label.typeface = typeface
+
             card.setOnClickListener {
                 isOn = !isOn
                 updateCardUI(card, label, icon, title, isOn, requireContext())
                 onToggle(isOn)
             }
 
-            card.setOnFocusChangeListener { v, hasFocus ->
+            card.setOnFocusChangeListener { _, hasFocus ->
                 if (hasFocus) {
                     card.cardElevation = 12f
+                    card.preventCornerOverlap = true
                 } else {
                     card.cardElevation = 4f
                 }
@@ -106,7 +113,7 @@ class DashboardFragment : Fragment() {
         label.text = "$title • ${if (isOn) "On" else "Off"}"
         val color = if (isOn) R.color.colorSecondary else R.color.colorOnSurface
         label.setTextColor(context.getColor(color))
-        icon.imageTintList = android.content.res.ColorStateList.valueOf(context.getColor(color))
+        icon.imageTintList = ColorStateList.valueOf(context.getColor(color))
     }
 
     companion object {

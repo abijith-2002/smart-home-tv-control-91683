@@ -1,5 +1,6 @@
 package com.smarthome.tv
 
+import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.widget.FrameLayout
 import android.widget.TextView
@@ -51,18 +52,29 @@ class MainActivity : AppCompatActivity() {
         navDashboard.requestFocus()
     }
 
+    private fun roundedFocusBackground(strokeColor: Int): GradientDrawable {
+        return GradientDrawable().apply {
+            shape = GradientDrawable.RECTANGLE
+            cornerRadius = resources.displayMetrics.density * 12f
+            setStroke((resources.displayMetrics.density * 2f).toInt(), strokeColor)
+            setColor(ContextCompat.getColor(this@MainActivity, android.R.color.transparent))
+        }
+    }
+
     private fun setupSidebar() {
-        val focusBg = ContextCompat.getColor(this, R.color.focus_glow)
+        val focusBorder = ContextCompat.getColor(this, R.color.focus_border)
         val primary = ContextCompat.getColor(this, R.color.colorPrimary)
         val textColor = ContextCompat.getColor(this, R.color.colorOnBackground)
 
         val highlight: (TextView) -> Unit = { tv ->
-            tv.setBackgroundColor(focusBg)
+            tv.background = roundedFocusBackground(focusBorder)
             tv.setTextColor(primary)
+            tv.elevation = 6f
         }
         val unhighlight: (TextView) -> Unit = { tv ->
-            tv.setBackgroundColor(0x00000000)
+            tv.background = null
             tv.setTextColor(textColor)
+            tv.elevation = 0f
         }
 
         arrayOf(navDashboard, navSettings).forEach { tv ->

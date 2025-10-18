@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <style name="Theme.SmartHomeTV" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Material color attributes -->
+        <!-- Material color attributes (Nord dark) -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryContainer">@color/colorPrimaryVariant</item>
         <item name="colorOnPrimary">@color/colorOnPrimary</item>
@@ -19,9 +19,17 @@
         <item name="android:navigationBarColor">@color/colorBackground</item>
         <item name="android:statusBarColor">@color/colorBackground</item>
 
+        <!-- Typography (Figtree) -->
+        <item name="android:fontFamily">@font/figtree_family_regular</item>
+
         <!-- Widgets -->
         <item name="materialCardViewStyle">@style/SmartCard</item>
         <item name="android:textViewStyle">@style/TVDefaultText</item>
+
+        <!-- Shape appearance (rounded corners) -->
+        <item name="shapeAppearanceSmallComponent">@style/Shape.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/Shape.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/Shape.Large</item>
     </style>
 
     <style name="SmartCard" parent="Widget.MaterialComponents.CardView">
@@ -36,10 +44,26 @@
         <item name="android:textColor">@color/colorOnBackground</item>
         <item name="android:background">?attr/selectableItemBackground</item>
         <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/figtree_family_medium</item>
     </style>
 
     <style name="TVDefaultText" parent="@android:style/Widget.TextView">
         <item name="android:textColor">@color/colorOnBackground</item>
         <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/figtree_family_regular</item>
+    </style>
+
+    <!-- Rounded shapes -->
+    <style name="Shape.Small" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="Shape.Medium" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+    <style name="Shape.Large" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
     </style>
 </resources>

@@ -3,7 +3,7 @@
     android:id="@+id/settingsRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/op_background">
+    android:background="@color/colorBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,8 +19,9 @@
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:text="@string/settings_account"
-            android:textColor="@color/op_text"
+            android:textColor="@color/colorOnBackground"
             android:textSize="18sp"
+            android:fontFamily="@font/figtree_family_regular"
             android:focusable="true"
             android:background="?attr/selectableItemBackground" />
 
@@ -32,8 +33,9 @@
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:text="@string/settings_network"
-            android:textColor="@color/op_text"
+            android:textColor="@color/colorOnBackground"
             android:textSize="18sp"
+            android:fontFamily="@font/figtree_regular"
             android:focusable="true"
             android:background="?attr/selectableItemBackground" />
 
@@ -45,8 +47,9 @@
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:text="@string/settings_about"
-            android:textColor="@color/op_text"
+            android:textColor="@color/colorOnBackground"
             android:textSize="18sp"
+            android:fontFamily="@font/figtree_regular"
             android:focusable="true"
             android:background="?attr/selectableItemBackground" />
     </LinearLayout>

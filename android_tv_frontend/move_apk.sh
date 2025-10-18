@@ -1,0 +1,1 @@
+mv /home/kavia/workspace/code-generation/smart-home-tv-control-91683/android_tv_frontend/app/build/outputs/apk/debug/app-debug.apk /home/kavia/workspace/code-generation/smart-home-tv-control-91683/android_tv_frontend/app-debug.apk 
