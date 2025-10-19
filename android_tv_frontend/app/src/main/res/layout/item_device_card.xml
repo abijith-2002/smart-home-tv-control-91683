@@ -34,6 +34,7 @@
                 android:background="@null"
                 android:contentDescription="Device Icon"
                 android:padding="@dimen/device_icon_padding"
+                android:scaleType="center"
                 app:srcCompat="@drawable/lightbulb_24" />
         </FrameLayout>
 

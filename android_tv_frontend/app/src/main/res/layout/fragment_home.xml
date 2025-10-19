@@ -30,6 +30,7 @@
                     android:layout_gravity="center"
                     android:background="@null"
                     android:contentDescription="@string/smarthome"
+                    android:scaleType="center"
                     app:srcCompat="@drawable/home_app_logo_24" />
             </FrameLayout>
 
