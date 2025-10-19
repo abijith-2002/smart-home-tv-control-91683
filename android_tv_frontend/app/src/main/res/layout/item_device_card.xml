@@ -42,18 +42,16 @@
             app:layout_constraintTop_toBottomOf="@id/deviceTitle"
             app:layout_constraintStart_toStartOf="@id/deviceTitle" />
 
-        <!-- Material icon placed bottom-start to mirror Figma's icon area -->
-        <TextView
+        <!-- Vector icon placed bottom-start to mirror Figma's icon area -->
+        <ImageView
             android:id="@+id/deviceIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:layout_marginStart="4dp"
             android:layout_marginBottom="4dp"
-            android:fontFamily="@font/material_icons"
-            android:text="lightbulb"
-            android:textSize="64sp"
-            android:importantForAccessibility="yes"
             android:contentDescription="@string/device_icon_light"
+            android:src="@drawable/ic_lightbulb_24"
+            android:scaleType="centerInside"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 

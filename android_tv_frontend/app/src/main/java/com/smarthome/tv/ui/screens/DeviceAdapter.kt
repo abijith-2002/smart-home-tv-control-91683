@@ -1,12 +1,15 @@
 package com.smarthome.tv.ui.screens
 
+import android.content.res.ColorStateList
 import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
+import androidx.core.widget.ImageViewCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.card.MaterialCardView
 import com.smarthome.tv.R
@@ -36,7 +39,7 @@ class DeviceAdapter(
         val card: MaterialCardView = itemView.findViewById(R.id.cardRoot)
         val title: TextView = itemView.findViewById(R.id.deviceTitle)
         val state: TextView = itemView.findViewById(R.id.deviceState)
-        val icon: TextView = itemView.findViewById(R.id.deviceIcon)
+        val icon: ImageView = itemView.findViewById(R.id.deviceIcon)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DeviceVH {
@@ -106,19 +109,22 @@ class DeviceAdapter(
     }
 
     private fun bindIcon(holder: DeviceVH, device: Device) {
-        // Use Material Icons ligatures for specific icons
+        // Bind vector drawable icons instead of ligature fonts
         when (device.type) {
             DeviceType.LIGHT -> {
-                holder.icon.text = "lightbulb"
-                holder.icon.contentDescription = holder.itemView.context.getString(R.string.device_icon_light)
+                holder.icon.setImageResource(R.drawable.ic_lightbulb_24)
+                holder.icon.contentDescription =
+                    holder.itemView.context.getString(R.string.device_icon_light)
             }
             DeviceType.FAN -> {
-                holder.icon.text = "mode_fan"
-                holder.icon.contentDescription = holder.itemView.context.getString(R.string.device_icon_fan)
+                holder.icon.setImageResource(R.drawable.ic_mode_fan_24)
+                holder.icon.contentDescription =
+                    holder.itemView.context.getString(R.string.device_icon_fan)
             }
             DeviceType.AC -> {
-                holder.icon.text = "ac_unit"
-                holder.icon.contentDescription = holder.itemView.context.getString(R.string.device_icon_ac)
+                holder.icon.setImageResource(R.drawable.ic_ac_unit_24)
+                holder.icon.contentDescription =
+                    holder.itemView.context.getString(R.string.device_icon_ac)
             }
         }
     }
@@ -135,9 +141,12 @@ class DeviceAdapter(
         )
 
         // Icon tint reflects ON/OFF
-        holder.icon.setTextColor(
-            if (isOn) ContextCompat.getColor(ctx, R.color.device_icon_on)
-            else ContextCompat.getColor(ctx, R.color.device_icon_off)
+        ImageViewCompat.setImageTintList(
+            holder.icon,
+            ColorStateList.valueOf(
+                if (isOn) ContextCompat.getColor(ctx, R.color.device_icon_on)
+                else ContextCompat.getColor(ctx, R.color.device_icon_off)
+            )
         )
     }
 
