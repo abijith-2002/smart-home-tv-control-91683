@@ -53,4 +53,12 @@
         <item name="fontFamily">@font/figtree</item>
         <item name="android:letterSpacing">0</item>
     </style>
+    
+    <!-- Custom MaterialSwitch Style with specific colors and border -->
+    <style name="CustomMaterialSwitch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="useMaterialThemeColors">false</item>
+        <item name="trackTint">@drawable/switch_track_selector</item>
+        <item name="thumbTint">@drawable/switch_thumb_selector</item>
+        <item name="android:background">@drawable/switch_track_border</item>
+    </style>
 </resources>

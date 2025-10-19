@@ -56,22 +56,19 @@
                 android:text="Device Name"
                 android:textAppearance="@style/TextAppearance.DeviceName" />
 
-            <!-- Material3 Switch without text labels -->
+            <!-- Material3 Switch with custom colors and 2dp border -->
             <com.google.android.material.materialswitch.MaterialSwitch
                 android:id="@+id/device_switch"
+                style="@style/CustomMaterialSwitch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="@dimen/switch_width"
                 android:minHeight="@dimen/switch_height"
-                android:background="@null"
                 android:focusable="true"
                 android:clickable="true"
                 android:focusableInTouchMode="true"
                 android:showText="false"
-                android:text=""
-                app:useMaterialThemeColors="true"
-                app:thumbTint="@color/switch_handle_on"
-                app:trackTint="@color/card_on_bg" />
+                android:text="" />
         </LinearLayout>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
