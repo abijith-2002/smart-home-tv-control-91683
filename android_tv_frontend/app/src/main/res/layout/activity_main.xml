@@ -24,7 +24,7 @@
             android:contentDescription="@string/devices"
             android:focusable="true"
             android:padding="12dp"
-            android:src="@drawable/ic_home" />
+            android:src="@drawable/home_app_logo_24" />
 
         <ImageView
             android:id="@+id/nav_activity"

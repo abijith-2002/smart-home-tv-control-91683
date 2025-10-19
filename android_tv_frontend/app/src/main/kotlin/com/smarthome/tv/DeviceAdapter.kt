@@ -44,8 +44,9 @@ class DeviceAdapter(
             
             // Set device icon based on type
             when (device.type) {
-                DeviceType.LIGHT -> deviceIcon.setImageResource(R.drawable.ic_lightbulb)
-                DeviceType.FAN, DeviceType.AC -> deviceIcon.setImageResource(R.drawable.ic_fan)
+                DeviceType.LIGHT -> deviceIcon.setImageResource(R.drawable.lightbulb_24)
+                DeviceType.FAN -> deviceIcon.setImageResource(R.drawable.mode_fan_24)
+                DeviceType.AC -> deviceIcon.setImageResource(R.drawable.ac_unit_24)
             }
             
             // Update card appearance based on state
