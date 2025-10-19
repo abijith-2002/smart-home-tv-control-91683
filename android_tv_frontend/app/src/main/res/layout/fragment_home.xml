@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_large">
+
+        <!-- Header with Icon and Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@color/surface">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/smarthome"
+                    android:src="@drawable/ic_lightbulb" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/smarthome"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/title_text_size" />
+        </LinearLayout>
+
+        <!-- Subheader with Devices count -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/devices"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text_size" />
+
+            <FrameLayout
+                android:layout_width="@dimen/count_badge_size"
+                android:layout_height="@dimen/count_badge_size"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/switch_on_bg">
+
+                <TextView
+                    android:id="@+id/device_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/switch_text_size" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Device Cards Grid -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/devices_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/margin_medium" />
+    </LinearLayout>
+</ScrollView>

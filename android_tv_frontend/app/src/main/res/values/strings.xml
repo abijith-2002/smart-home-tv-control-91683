@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Smart Home TV</string>
+    <string name="devices">Devices</string>
+    <string name="activity">Activity</string>
+    <string name="settings">Settings</string>
+    <string name="device_on">On</string>
+    <string name="device_off">Off</string>
+    <string name="add_device">Add Device</string>
+    <string name="smarthome">SmartHome</string>
+</resources>

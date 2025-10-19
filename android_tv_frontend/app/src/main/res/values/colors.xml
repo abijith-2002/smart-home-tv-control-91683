@@ -1,0 +1,30 @@
+<resources>
+    <!-- Primary colors from Ocean Professional theme -->
+    <color name="primary">#2563EB</color>
+    <color name="secondary">#F59E0B</color>
+    <color name="background">#1A1C20</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text">#111827</color>
+    
+    <!-- Sidebar and card colors -->
+    <color name="sidebar_bg">#2E3036</color>
+    <color name="card_on_bg">#3E4759</color>
+    <color name="card_off_bg">#284677</color>
+    <color name="card_border">#565E71</color>
+    
+    <!-- Switch colors -->
+    <color name="switch_on_bg">#ABC7FF</color>
+    <color name="switch_off_bg">#565E71</color>
+    <color name="switch_handle_on">#425E91</color>
+    <color name="switch_handle_off">#D7E2FF</color>
+    
+    <!-- Accent colors -->
+    <color name="accent_light_blue">#D7E2FF</color>
+    <color name="accent_blue">#425E91</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#F9F9FF</color>
+    
+    <!-- Focus colors -->
+    <color name="focus_color">#2563EB</color>
+    <color name="focus_glow">#4D2563EB</color>
+</resources>

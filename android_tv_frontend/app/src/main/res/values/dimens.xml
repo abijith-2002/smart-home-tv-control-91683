@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="sidebar_width">103dp</dimen>
+    <dimen name="card_corner_radius">40dp</dimen>
+    <dimen name="switch_corner_radius">100dp</dimen>
+    <dimen name="icon_size">50dp</dimen>
+    <dimen name="device_icon_size">94dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="title_text_size">64sp</dimen>
+    <dimen name="header_text_size">40sp</dimen>
+    <dimen name="device_name_text_size">32sp</dimen>
+    <dimen name="switch_text_size">24sp</dimen>
+    <dimen name="count_badge_size">50dp</dimen>
+</resources>
