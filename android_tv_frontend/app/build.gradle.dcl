@@ -8,6 +8,7 @@ androidApplication {
         implementation("androidx.constraintlayout:constraintlayout:2.1.4")
         implementation("androidx.fragment:fragment-ktx:1.8.5")
         implementation("androidx.cardview:cardview:1.0.0")
+        implementation("androidx.recyclerview:recyclerview:1.3.2")
         implementation("androidx.leanback:leanback:1.2.0-alpha04")
 
         // Material3 and Compose UI (icons usage and potential previews)

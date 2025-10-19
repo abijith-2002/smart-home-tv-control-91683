@@ -47,4 +47,8 @@
     <color name="focus_glow">#6688C0D0</color>
     <color name="focus_border">#88C0D0</color>
     <color name="card_shadow">#14000000</color>
+
+    <!-- Device card states -->
+    <color name="device_on_bg">@color/colorPrimaryVariant</color>
+    <color name="device_off_bg">@color/colorSurfaceVariant</color>
 </resources>

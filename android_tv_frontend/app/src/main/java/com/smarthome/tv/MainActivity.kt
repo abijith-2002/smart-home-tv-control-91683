@@ -3,13 +3,14 @@ package com.smarthome.tv
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.widget.FrameLayout
-import android.widget.TextView
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.smarthome.tv.R
 import com.smarthome.tv.ui.screens.DashboardFragment
 import com.smarthome.tv.ui.screens.SettingsFragment
+import com.smarthome.tv.ui.screens.ActivityFragment
 
 /**
  * PUBLIC_INTERFACE
@@ -22,12 +23,13 @@ import com.smarthome.tv.ui.screens.SettingsFragment
  */
 class MainActivity : AppCompatActivity() {
 
-    private enum class Section { DASHBOARD, SETTINGS }
+    private enum class Section { DASHBOARD, ACTIVITY, SETTINGS }
 
     private var currentSection: Section = Section.DASHBOARD
 
-    private lateinit var navDashboard: TextView
-    private lateinit var navSettings: TextView
+    private lateinit var navHomeIcon: ImageView
+    private lateinit var navActivityIcon: ImageView
+    private lateinit var navSettingsIcon: ImageView
     private lateinit var contentContainer: FrameLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,8 +38,9 @@ class MainActivity : AppCompatActivity() {
         val layoutId = R.layout.activity_main
         setContentView(layoutId)
 
-        navDashboard = findViewById(R.id.navDashboard)
-        navSettings = findViewById(R.id.navSettings)
+        navHomeIcon = findViewById(R.id.navHomeIcon)
+        navActivityIcon = findViewById(R.id.navActivityIcon)
+        navSettingsIcon = findViewById(R.id.navSettingsIcon)
         contentContainer = findViewById(R.id.contentContainer)
 
         setupSidebar()
@@ -47,9 +50,9 @@ class MainActivity : AppCompatActivity() {
             showSection(Section.DASHBOARD)
         }
 
-        // Start focus on sidebar Dashboard item for TV
-        navDashboard.isFocusable = true
-        navDashboard.requestFocus()
+        // Start focus on sidebar Home icon for TV
+        navHomeIcon.isFocusable = true
+        navHomeIcon.requestFocus()
     }
 
     private fun roundedFocusBackground(strokeColor: Int): GradientDrawable {
@@ -63,55 +66,57 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupSidebar() {
         val focusBorder = ContextCompat.getColor(this, R.color.focus_border)
-        val primary = ContextCompat.getColor(this, R.color.colorPrimary)
-        val textColor = ContextCompat.getColor(this, R.color.colorOnBackground)
 
-        val highlight: (TextView) -> Unit = { tv ->
-            tv.background = roundedFocusBackground(focusBorder)
-            tv.setTextColor(primary)
-            tv.elevation = 6f
+        val highlight: (ImageView) -> Unit = { v ->
+            v.background = roundedFocusBackground(focusBorder)
+            v.elevation = 6f
+            v.alpha = 1.0f
+            v.scaleX = 1.05f
+            v.scaleY = 1.05f
         }
-        val unhighlight: (TextView) -> Unit = { tv ->
-            tv.background = null
-            tv.setTextColor(textColor)
-            tv.elevation = 0f
+        val unhighlight: (ImageView) -> Unit = { v ->
+            v.background = null
+            v.elevation = 0f
+            v.alpha = 0.95f
+            v.scaleX = 1.0f
+            v.scaleY = 1.0f
         }
 
-        arrayOf(navDashboard, navSettings).forEach { tv ->
-            tv.isFocusable = true
-            tv.isClickable = true
-            tv.setOnFocusChangeListener { v, hasFocus ->
-                if (v is TextView) {
+        arrayOf(navHomeIcon, navActivityIcon, navSettingsIcon).forEach { iv ->
+            iv.isFocusable = true
+            iv.isClickable = true
+            iv.setOnFocusChangeListener { v, hasFocus ->
+                if (v is ImageView) {
                     if (hasFocus) highlight(v) else unhighlight(v)
                 }
             }
         }
 
-        navDashboard.setOnClickListener {
-            showSection(Section.DASHBOARD)
-        }
-        navSettings.setOnClickListener {
-            showSection(Section.SETTINGS)
-        }
+        navHomeIcon.setOnClickListener { showSection(Section.DASHBOARD) }
+        navActivityIcon.setOnClickListener { showSection(Section.ACTIVITY) }
+        navSettingsIcon.setOnClickListener { showSection(Section.SETTINGS) }
 
         // Focus traversal from sidebar into content container
-        navDashboard.nextFocusRightId = contentContainer.id
-        navSettings.nextFocusRightId = contentContainer.id
+        navHomeIcon.nextFocusRightId = contentContainer.id
+        navActivityIcon.nextFocusRightId = contentContainer.id
+        navSettingsIcon.nextFocusRightId = contentContainer.id
     }
 
     private fun showSection(section: Section) {
         currentSection = section
         val fragment = when (section) {
             Section.DASHBOARD -> DashboardFragment.newInstance()
+            Section.ACTIVITY -> ActivityFragment.newInstance()
             Section.SETTINGS -> SettingsFragment.newInstance()
         }
         supportFragmentManager.beginTransaction()
             .replace(contentContainer.id, fragment, section.name)
             .commit()
-        Toast.makeText(
-            this,
-            if (section == Section.DASHBOARD) getString(R.string.nav_dashboard) else getString(R.string.nav_settings),
-            Toast.LENGTH_SHORT
-        ).show()
+        val label = when (section) {
+            Section.DASHBOARD -> getString(R.string.nav_dashboard)
+            Section.ACTIVITY -> getString(R.string.nav_activity)
+            Section.SETTINGS -> getString(R.string.nav_settings)
+        }
+        Toast.makeText(this, label, Toast.LENGTH_SHORT).show()
     }
 }

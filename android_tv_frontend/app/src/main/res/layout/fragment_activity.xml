@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/settingsRoot"
+    android:id="@+id/activityRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
     android:padding="24dp">
 
     <TextView
-        android:id="@+id/settingsHeading"
+        android:id="@+id/activityHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/settings_heading"
+        android:text="@string/activity_heading"
         android:textColor="@color/colorOnBackground"
         android:textSize="28sp"
         android:fontFamily="@font/figtree_family_medium" />
