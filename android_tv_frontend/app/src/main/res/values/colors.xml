@@ -24,6 +24,9 @@
     <color name="accent_blue">#425E91</color>
     <color name="white">#FFFFFF</color>
     <color name="light_gray">#F9F9FF</color>
+
+    <!-- Add button background (matches #ABC7FF) -->
+    <color name="add_button_bg">#ABC7FF</color>
     
     <!-- Focus colors -->
     <color name="focus_color">#2563EB</color>

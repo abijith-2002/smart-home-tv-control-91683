@@ -42,7 +42,7 @@
                 android:textAppearance="@style/TextAppearance.Title" />
         </LinearLayout>
 
-        <!-- Subheader with Devices count -->
+        <!-- Subheader with Devices count and Add button -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,27 +50,57 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- Left group: title + count -->
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/devices"
-                android:textAppearance="@style/TextAppearance.Header" />
-
-            <FrameLayout
-                android:layout_width="@dimen/count_badge_size"
-                android:layout_height="@dimen/count_badge_size"
-                android:layout_marginStart="@dimen/count_badge_margin"
-                android:padding="@dimen/count_badge_padding"
-                android:background="@drawable/switch_on_bg">
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/device_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="6"
-                    android:textAppearance="@style/TextAppearance.CountBadge" />
-            </FrameLayout>
+                    android:text="@string/devices"
+                    android:textAppearance="@style/TextAppearance.Header" />
+
+                <FrameLayout
+                    android:layout_width="@dimen/count_badge_size"
+                    android:layout_height="@dimen/count_badge_size"
+                    android:layout_marginStart="@dimen/count_badge_margin"
+                    android:padding="@dimen/count_badge_padding"
+                    android:background="@drawable/switch_on_bg">
+
+                    <TextView
+                        android:id="@+id/device_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="6"
+                        android:textAppearance="@style/TextAppearance.CountBadge" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- Add button on the right -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_add_device"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_large"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:text="@string/add_device"
+                android:textAllCaps="false"
+                android:minHeight="48dp"
+                android:minWidth="0dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
+                app:backgroundTint="@color/add_button_bg"
+                app:icon="@drawable/ic_add_24"
+                app:iconGravity="textStart"
+                app:iconPadding="8dp"
+                app:cornerRadius="24dp" />
         </LinearLayout>
 
         <!-- Device Cards Grid -->

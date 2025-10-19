@@ -32,6 +32,12 @@ class HomeFragment : Fragment() {
         
         devicesRecyclerView = view.findViewById(R.id.devices_recycler_view)
         deviceCountText = view.findViewById(R.id.device_count)
+
+        // Add Device button placeholder click handler
+        view.findViewById<View?>(R.id.btn_add_device)?.setOnClickListener {
+            // Placeholder: In future, open "Add Device" flow or dialog
+            // For now, you can log or show a transient UI if desired.
+        }
         
         setupDevices()
         setupRecyclerView()
