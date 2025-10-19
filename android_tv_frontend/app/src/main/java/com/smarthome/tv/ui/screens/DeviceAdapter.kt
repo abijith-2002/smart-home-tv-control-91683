@@ -135,17 +135,19 @@ class DeviceAdapter(
         holder.card.setCardBackgroundColor(if (isOn) onColor else offColor)
 
         holder.state.text = if (isOn) ctx.getString(R.string.state_on) else ctx.getString(R.string.state_off)
-        holder.state.setTextColor(
-            if (isOn) ContextCompat.getColor(ctx, R.color.colorBackground)
-            else ContextCompat.getColor(ctx, R.color.colorOnBackground)
-        )
 
-        // Icon tint reflects ON/OFF
+        // Ensure both texts maintain contrast with the background
+        val onTextColor = ContextCompat.getColor(ctx, R.color.colorBackground)      // dark text on light ON bg
+        val offTextColor = ContextCompat.getColor(ctx, R.color.colorOnBackground)   // light text on dark OFF bg
+        holder.title.setTextColor(if (isOn) onTextColor else offTextColor)
+        holder.state.setTextColor(if (isOn) onTextColor else offTextColor)
+
+        // Icon tint reflects ON/OFF using Nord palette with strong contrast
         ImageViewCompat.setImageTintList(
             holder.icon,
             ColorStateList.valueOf(
-                if (isOn) ContextCompat.getColor(ctx, R.color.device_icon_on)
-                else ContextCompat.getColor(ctx, R.color.device_icon_off)
+                if (isOn) ContextCompat.getColor(ctx, R.color.icon_on)
+                else ContextCompat.getColor(ctx, R.color.icon_off)
             )
         )
     }

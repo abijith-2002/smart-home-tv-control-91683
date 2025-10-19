@@ -55,4 +55,8 @@
     <!-- Device icon tint colors -->
     <color name="device_icon_on">@color/colorPrimary</color>
     <color name="device_icon_off">@color/nord3</color>
+
+    <!-- Nord icon tints with stronger contrast (preferred) -->
+    <color name="icon_on">@color/nord10</color> <!-- dark frost blue for light ON bg -->
+    <color name="icon_off">@color/nord4</color> <!-- light gray/ice for dark OFF bg -->
 </resources>
