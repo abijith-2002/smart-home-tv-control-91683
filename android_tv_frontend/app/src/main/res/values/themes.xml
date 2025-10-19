@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Use a basic Android theme parent to satisfy AAPT; Compose Material3 handles runtime theming -->
+    <style name="Theme.SmartHomeTv" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+</resources>
