@@ -28,7 +28,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     android:contentDescription="@string/smarthome"
-                    android:src="@drawable/ic_lightbulb" />
+                    android:src="@drawable/home_app_logo_24" />
             </FrameLayout>
 
             <TextView
