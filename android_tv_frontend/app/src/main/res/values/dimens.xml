@@ -44,5 +44,5 @@
     <dimen name="device_card_margin">6dp</dimen>
     <dimen name="device_icon_bottom_margin">11dp</dimen>
     <dimen name="device_icon_start_margin">11dp</dimen>
-    <dimen name="device_name_top_margin">29dp</dimen>
+    <dimen name="device_name_top_margin">21dp</dimen>
 </resources>
