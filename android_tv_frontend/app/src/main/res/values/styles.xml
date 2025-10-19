@@ -9,9 +9,9 @@
         <item name="fontFamily">@font/figtree</item>
     </style>
     
-    <!-- Typography styles using Figtree font with additional 7% reduction -->
+    <!-- Typography styles using Figtree font with 7% reduction -->
     <style name="TextAppearance.Title" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">48sp</item>
+        <item name="android:textSize">45sp</item>
         <item name="android:textColor">@color/light_gray</item>
         <item name="android:fontFamily">@font/figtree</item>
         <item name="fontFamily">@font/figtree</item>
@@ -19,7 +19,7 @@
     </style>
     
     <style name="TextAppearance.Header" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">31sp</item>
+        <item name="android:textSize">29sp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">@font/figtree</item>
         <item name="fontFamily">@font/figtree</item>
@@ -27,7 +27,7 @@
     </style>
     
     <style name="TextAppearance.DeviceName" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">23sp</item>
+        <item name="android:textSize">21sp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">@font/figtree</item>
         <item name="fontFamily">@font/figtree</item>
@@ -35,7 +35,7 @@
     </style>
     
     <style name="TextAppearance.Switch" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/text</item>
         <item name="android:fontFamily">@font/figtree</item>
         <item name="fontFamily">@font/figtree</item>
@@ -43,7 +43,7 @@
     </style>
     
     <style name="TextAppearance.CountBadge" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">19sp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">@font/figtree</item>
         <item name="fontFamily">@font/figtree</item>
