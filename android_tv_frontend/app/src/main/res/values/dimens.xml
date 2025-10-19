@@ -1,48 +1,48 @@
 <resources>
     <!-- Sidebar -->
-    <dimen name="sidebar_width">103dp</dimen>
+    <dimen name="sidebar_width">95dp</dimen>
     
     <!-- Card styling -->
-    <dimen name="card_corner_radius">40dp</dimen>
-    <dimen name="card_padding">32dp</dimen>
+    <dimen name="card_corner_radius">37dp</dimen>
+    <dimen name="card_padding">29dp</dimen>
     
     <!-- Switch styling -->
-    <dimen name="switch_corner_radius">100dp</dimen>
-    <dimen name="switch_width">52dp</dimen>
-    <dimen name="switch_height">32dp</dimen>
+    <dimen name="switch_corner_radius">92dp</dimen>
+    <dimen name="switch_width">48dp</dimen>
+    <dimen name="switch_height">29dp</dimen>
     
     <!-- Icon sizes -->
-    <dimen name="icon_size">50dp</dimen>
-    <dimen name="icon_padding">8dp</dimen>
-    <dimen name="device_icon_size">94dp</dimen>
-    <dimen name="device_icon_padding">12dp</dimen>
+    <dimen name="icon_size">46dp</dimen>
+    <dimen name="icon_padding">7dp</dimen>
+    <dimen name="device_icon_size">86dp</dimen>
+    <dimen name="device_icon_padding">11dp</dimen>
     
     <!-- Margins and spacing -->
-    <dimen name="margin_small">8dp</dimen>
-    <dimen name="margin_medium">16dp</dimen>
-    <dimen name="margin_large">24dp</dimen>
-    <dimen name="margin_xlarge">48dp</dimen>
+    <dimen name="margin_small">7dp</dimen>
+    <dimen name="margin_medium">15dp</dimen>
+    <dimen name="margin_large">22dp</dimen>
+    <dimen name="margin_xlarge">44dp</dimen>
     
     <!-- Sidebar icon spacing -->
-    <dimen name="sidebar_top_padding">240dp</dimen>
-    <dimen name="sidebar_icon_margin_bottom">40dp</dimen>
-    <dimen name="home_icon_width">85dp</dimen>
-    <dimen name="home_icon_height">72dp</dimen>
+    <dimen name="sidebar_top_padding">221dp</dimen>
+    <dimen name="sidebar_icon_margin_bottom">37dp</dimen>
+    <dimen name="home_icon_width">78dp</dimen>
+    <dimen name="home_icon_height">66dp</dimen>
     
     <!-- Typography sizes -->
-    <dimen name="title_text_size">64sp</dimen>
-    <dimen name="header_text_size">40sp</dimen>
-    <dimen name="device_name_text_size">32sp</dimen>
-    <dimen name="switch_text_size">20sp</dimen>
+    <dimen name="title_text_size">59sp</dimen>
+    <dimen name="header_text_size">37sp</dimen>
+    <dimen name="device_name_text_size">29sp</dimen>
+    <dimen name="switch_text_size">18sp</dimen>
     
     <!-- Count badge -->
-    <dimen name="count_badge_size">50dp</dimen>
-    <dimen name="count_badge_margin">25dp</dimen>
+    <dimen name="count_badge_size">46dp</dimen>
+    <dimen name="count_badge_margin">23dp</dimen>
     
     <!-- Device card specific -->
-    <dimen name="device_card_height">250dp</dimen>
-    <dimen name="device_card_margin">8dp</dimen>
-    <dimen name="device_icon_bottom_margin">14dp</dimen>
-    <dimen name="device_icon_start_margin">14dp</dimen>
-    <dimen name="device_name_top_margin">36dp</dimen>
+    <dimen name="device_card_height">230dp</dimen>
+    <dimen name="device_card_margin">7dp</dimen>
+    <dimen name="device_icon_bottom_margin">13dp</dimen>
+    <dimen name="device_icon_start_margin">13dp</dimen>
+    <dimen name="device_name_top_margin">33dp</dimen>
 </resources>

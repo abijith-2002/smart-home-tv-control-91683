@@ -6,10 +6,11 @@
     <color name="surface">#FFFFFF</color>
     <color name="text">#111827</color>
     
-    <!-- Sidebar and card colors - precise values from screenshot -->
+    <!-- Sidebar and card colors - updated per spec -->
     <color name="sidebar_bg">#2E3036</color>
-    <color name="card_on_bg">#3E4759</color>
+    <color name="card_on_bg">#565E71</color>
     <color name="card_off_bg">#284677</color>
+    <color name="card_off_bg_16">#29284677</color>
     <color name="card_border">#565E71</color>
     
     <!-- Switch colors - precise values -->
