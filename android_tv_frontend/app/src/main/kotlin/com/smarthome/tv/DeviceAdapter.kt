@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.widget.SwitchCompat
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.materialswitch.MaterialSwitch
 
 // PUBLIC_INTERFACE
 /**
@@ -30,7 +30,7 @@ class DeviceAdapter(
         private val deviceCard: CardView = itemView.findViewById(R.id.device_card)
         private val deviceName: TextView = itemView.findViewById(R.id.device_name)
         private val deviceIcon: ImageView = itemView.findViewById(R.id.device_icon)
-        private val deviceSwitch: SwitchCompat = itemView.findViewById(R.id.device_switch)
+        private val deviceSwitch: MaterialSwitch = itemView.findViewById(R.id.device_switch)
 
         // PUBLIC_INTERFACE
         /**
@@ -47,7 +47,8 @@ class DeviceAdapter(
                 DeviceType.AC -> deviceIcon.setImageResource(R.drawable.ac_unit_24)
             }
             
-            // Set switch state
+            // Set switch state without triggering listener
+            deviceSwitch.setOnCheckedChangeListener(null)
             deviceSwitch.isChecked = device.isOn
             
             // Update card appearance based on state

@@ -56,8 +56,8 @@
                 android:text="Device Name"
                 android:textAppearance="@style/TextAppearance.DeviceName" />
 
-            <!-- Native Android Switch -->
-            <androidx.appcompat.widget.SwitchCompat
+            <!-- Material3 Switch without text labels -->
+            <com.google.android.material.materialswitch.MaterialSwitch
                 android:id="@+id/device_switch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -67,11 +67,7 @@
                 android:focusable="true"
                 android:clickable="true"
                 android:focusableInTouchMode="true"
-                android:textOn="@string/device_on"
-                android:textOff="@string/device_off"
-                android:textAppearance="@style/TextAppearance.Switch"
-                app:showText="true"
-                app:switchMinWidth="@dimen/switch_width"
+                app:useMaterialThemeColors="true"
                 app:thumbTint="@color/switch_handle_on"
                 app:trackTint="@color/card_on_bg" />
         </LinearLayout>
