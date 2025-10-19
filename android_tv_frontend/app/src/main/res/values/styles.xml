@@ -81,12 +81,30 @@
     </style>
     <!-- Rounded Material3 Button style for compact TV header buttons -->
     <style name="RoundedHeaderButton" parent="Widget.Material3.Button">
+        <!-- Typography -->
         <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/figtree</item>
+        <item name="fontFamily">@font/figtree</item>
+        <!-- Heavier weight for better legibility on TV (+ label) -->
+        <item name="android:textStyle">bold</item>
+        <!-- Slightly larger text size for visibility -->
+        <item name="android:textSize">18sp</item>
+
+        <!-- Shape and spacing -->
         <item name="cornerRadius">24dp</item>
         <item name="iconPadding">8dp</item>
         <item name="android:minHeight">48dp</item>
-        <item name="android:fontFamily">@font/figtree</item>
-        <item name="fontFamily">@font/figtree</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">16dp</item>
+
+        <!-- Colors to match design -->
         <item name="backgroundTint">@color/add_button_bg</item>
+        <!-- Ensure readable text color on #ABC7FF background -->
+        <item name="android:textColor">@color/text</item>
+
+        <!-- TV focus visual consistency (uses Material defaults augmented by our background) -->
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
     </style>
 </resources>
