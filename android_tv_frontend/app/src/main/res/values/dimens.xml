@@ -36,8 +36,9 @@
     <dimen name="switch_text_size">16sp</dimen>
     
     <!-- Count badge -->
-    <dimen name="count_badge_size">48dp</dimen>
+    <dimen name="count_badge_size">44dp</dimen>
     <dimen name="count_badge_margin">20dp</dimen>
+    <dimen name="count_badge_padding">8dp</dimen>
     
     <!-- Device card specific -->
     <dimen name="device_card_height">199dp</dimen>

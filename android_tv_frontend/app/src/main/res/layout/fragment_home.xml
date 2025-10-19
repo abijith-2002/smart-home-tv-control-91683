@@ -60,6 +60,7 @@
                 android:layout_width="@dimen/count_badge_size"
                 android:layout_height="@dimen/count_badge_size"
                 android:layout_marginStart="@dimen/count_badge_margin"
+                android:padding="@dimen/count_badge_padding"
                 android:background="@drawable/switch_on_bg">
 
                 <TextView
