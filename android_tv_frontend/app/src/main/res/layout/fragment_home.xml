@@ -28,6 +28,7 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
+                    android:background="@null"
                     android:contentDescription="@string/smarthome"
                     app:srcCompat="@drawable/home_app_logo_24" />
             </FrameLayout>
