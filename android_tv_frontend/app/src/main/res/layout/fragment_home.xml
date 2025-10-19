@@ -14,7 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="48dp"
+            android:layout_marginBottom="@dimen/margin_xlarge"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
@@ -35,10 +35,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_large"
-                android:fontFamily="sans-serif-medium"
                 android:text="@string/smarthome"
-                android:textColor="@color/light_gray"
-                android:textSize="@dimen/title_text_size" />
+                android:textAppearance="@style/TextAppearance.Title" />
         </LinearLayout>
 
         <!-- Subheader with Devices count -->
@@ -52,15 +50,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
                 android:text="@string/devices"
-                android:textColor="@color/white"
-                android:textSize="@dimen/header_text_size" />
+                android:textAppearance="@style/TextAppearance.Header" />
 
             <FrameLayout
                 android:layout_width="@dimen/count_badge_size"
                 android:layout_height="@dimen/count_badge_size"
-                android:layout_marginStart="25dp"
+                android:layout_marginStart="@dimen/count_badge_margin"
                 android:background="@drawable/switch_on_bg">
 
                 <TextView
@@ -68,10 +64,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="sans-serif-medium"
                     android:text="6"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/switch_text_size" />
+                    android:textAppearance="@style/TextAppearance.CountBadge" />
             </FrameLayout>
         </LinearLayout>
 

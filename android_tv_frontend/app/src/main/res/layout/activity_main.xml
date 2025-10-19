@@ -13,13 +13,13 @@
         android:background="@color/sidebar_bg"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:paddingTop="240dp">
+        android:paddingTop="@dimen/sidebar_top_padding">
 
         <ImageView
             android:id="@+id/nav_home"
-            android:layout_width="85dp"
-            android:layout_height="72dp"
-            android:layout_marginBottom="40dp"
+            android:layout_width="@dimen/home_icon_width"
+            android:layout_height="@dimen/home_icon_height"
+            android:layout_marginBottom="@dimen/sidebar_icon_margin_bottom"
             android:background="@drawable/sidebar_item_bg"
             android:contentDescription="@string/devices"
             android:focusable="true"
@@ -30,11 +30,11 @@
             android:id="@+id/nav_activity"
             android:layout_width="@dimen/icon_size"
             android:layout_height="@dimen/icon_size"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="@dimen/sidebar_icon_margin_bottom"
             android:background="@drawable/sidebar_item_bg"
             android:contentDescription="@string/activity"
             android:focusable="true"
-            android:padding="8dp"
+            android:padding="@dimen/icon_padding"
             android:src="@drawable/ic_history" />
 
         <ImageView
@@ -44,7 +44,7 @@
             android:background="@drawable/sidebar_item_bg"
             android:contentDescription="@string/settings"
             android:focusable="true"
-            android:padding="8dp"
+            android:padding="@dimen/icon_padding"
             android:src="@drawable/ic_settings" />
     </LinearLayout>
 

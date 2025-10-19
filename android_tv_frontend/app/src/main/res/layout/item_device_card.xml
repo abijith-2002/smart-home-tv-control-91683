@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/device_card"
     android:layout_width="match_parent"
-    android:layout_height="250dp"
-    android:layout_margin="@dimen/margin_small"
+    android:layout_height="@dimen/device_card_height"
+    android:layout_margin="@dimen/device_card_margin"
     android:focusable="true"
     android:clickable="true"
     app:cardCornerRadius="@dimen/card_corner_radius"
@@ -22,8 +22,8 @@
             android:layout_height="@dimen/device_icon_size"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="14dp"
-            android:layout_marginBottom="14dp"
+            android:layout_marginStart="@dimen/device_icon_start_margin"
+            android:layout_marginBottom="@dimen/device_icon_bottom_margin"
             android:background="@color/surface">
 
             <ImageView
@@ -31,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:contentDescription="Device Icon"
-                android:padding="12dp"
+                android:padding="@dimen/device_icon_padding"
                 android:src="@drawable/ic_lightbulb" />
         </FrameLayout>
 
@@ -40,21 +40,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="@dimen/device_name_top_margin"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingStart="32dp"
-            android:paddingEnd="32dp">
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp">
 
             <TextView
                 android:id="@+id/device_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="sans-serif"
                 android:text="Device Name"
-                android:textColor="@color/white"
-                android:textSize="@dimen/device_name_text_size" />
+                android:textAppearance="@style/TextAppearance.DeviceName" />
 
             <!-- Switch Toggle -->
             <FrameLayout
@@ -64,8 +62,8 @@
 
                 <View
                     android:id="@+id/switch_bg"
-                    android:layout_width="52dp"
-                    android:layout_height="32dp"
+                    android:layout_width="@dimen/switch_width"
+                    android:layout_height="@dimen/switch_height"
                     android:background="@drawable/switch_on_bg" />
 
                 <TextView
@@ -73,12 +71,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="sans-serif-medium"
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp"
                     android:text="@string/device_on"
-                    android:textColor="@color/text"
-                    android:textSize="20sp" />
+                    android:textAppearance="@style/TextAppearance.Switch" />
             </FrameLayout>
         </LinearLayout>
     </RelativeLayout>
