@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cardRoot"
     android:layout_width="match_parent"
     android:layout_height="200dp"
@@ -10,21 +11,25 @@
     android:padding="16dp"
     android:descendantFocusability="blocksDescendants">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="bottom">
+        android:layout_height="match_parent">
 
+        <!-- Title near top-left, bold per Figma -->
         <TextView
             android:id="@+id/deviceTitle"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textColor="@color/colorOnBackground"
             android:textSize="20sp"
             android:fontFamily="@font/figtree_family_medium"
-            android:maxLines="2" />
+            android:maxLines="2"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
+        <!-- State text below title -->
         <TextView
             android:id="@+id/deviceState"
             android:layout_width="wrap_content"
@@ -33,7 +38,24 @@
             android:text="@string/state_off"
             android:textSize="16sp"
             android:fontFamily="@font/figtree_family_medium"
-            android:textColor="@color/colorOnBackground" />
+            android:textColor="@color/colorOnBackground"
+            app:layout_constraintTop_toBottomOf="@id/deviceTitle"
+            app:layout_constraintStart_toStartOf="@id/deviceTitle" />
 
-    </LinearLayout>
+        <!-- Material icon placed bottom-start to mirror Figma's icon area -->
+        <TextView
+            android:id="@+id/deviceIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/material_icons"
+            android:text="lightbulb"
+            android:textSize="64sp"
+            android:importantForAccessibility="yes"
+            android:contentDescription="@string/device_icon_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

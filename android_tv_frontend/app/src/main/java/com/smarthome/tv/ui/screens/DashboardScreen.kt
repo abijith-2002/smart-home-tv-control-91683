@@ -26,11 +26,11 @@ class DashboardFragment : Fragment() {
     private lateinit var adapter: DeviceAdapter
 
     private val devices = mutableListOf(
-        DeviceAdapter.Device(id = "dev1", name = "Living Room Light", isOn = true),
-        DeviceAdapter.Device(id = "dev2", name = "Living Room Fan", isOn = false),
-        DeviceAdapter.Device(id = "dev3", name = "Dining Room Fan", isOn = false),
-        DeviceAdapter.Device(id = "dev4", name = "Bedroom 1 Light", isOn = false),
-        DeviceAdapter.Device(id = "dev5", name = "Bedroom 1 AC", isOn = true),
+        DeviceAdapter.Device(id = "dev1", name = "Living Room Light", type = DeviceAdapter.DeviceType.LIGHT, isOn = true),
+        DeviceAdapter.Device(id = "dev2", name = "Living Room Fan", type = DeviceAdapter.DeviceType.FAN, isOn = false),
+        DeviceAdapter.Device(id = "dev3", name = "Dining Room Fan", type = DeviceAdapter.DeviceType.FAN, isOn = false),
+        DeviceAdapter.Device(id = "dev4", name = "Bedroom 1 Light", type = DeviceAdapter.DeviceType.LIGHT, isOn = false),
+        DeviceAdapter.Device(id = "dev5", name = "Bedroom 1 AC", type = DeviceAdapter.DeviceType.AC, isOn = true),
     )
 
     override fun onCreateView(

@@ -51,4 +51,8 @@
     <!-- Device card states -->
     <color name="device_on_bg">@color/colorPrimaryVariant</color>
     <color name="device_off_bg">@color/colorSurfaceVariant</color>
+
+    <!-- Device icon tint colors -->
+    <color name="device_icon_on">@color/colorPrimary</color>
+    <color name="device_icon_off">@color/nord3</color>
 </resources>

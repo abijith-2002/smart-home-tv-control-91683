@@ -18,4 +18,9 @@
 
     <string name="state_on">On</string>
     <string name="state_off">Off</string>
+
+    <!-- Accessibility: content descriptions for icons -->
+    <string name="device_icon_light">Light icon</string>
+    <string name="device_icon_fan">Fan icon</string>
+    <string name="device_icon_ac">Air conditioner icon</string>
 </resources>

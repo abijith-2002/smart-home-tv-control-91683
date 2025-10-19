@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Simplified Material mode_fan shape -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M12,4a2,2 0 0,1 2,2c0,0.62 -0.28,1.18 -0.72,1.54l2.2,4.4l1.6,-1.6l3.2,0l0,2l-2.34,0c0.09,0.31 0.14,0.64 0.14,0.98c0,2.21 -1.79,4 -4,4c-0.34,0 -0.67,-0.05 -0.98,-0.14l0,2.34l-2,0l0,-3.2l1.6,-1.6l-4.4,-2.2c-0.36,0.44 -0.92,0.72 -1.54,0.72a2,2 0 0,1 -2,-2c0,-1.1 0.9,-2 2,-2c0.62,0 1.18,0.28 1.54,0.72l4.4,-2.2c-0.44,-0.36 -0.72,-0.92 -0.72,-1.54a2,2 0 0,1 2,-2z"/>
+</vector>
