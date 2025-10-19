@@ -9,7 +9,7 @@
         <item name="fontFamily">@font/figtree</item>
     </style>
     
-    <!-- Typography styles using Figtree font -->
+    <!-- Typography styles using Figtree font (night mode) -->
     <style name="TextAppearance.Title" parent="TextAppearance.AppCompat">
         <item name="android:textSize">64sp</item>
         <item name="android:textColor">@color/light_gray</item>
@@ -48,23 +48,5 @@
         <item name="android:fontFamily">@font/figtree</item>
         <item name="fontFamily">@font/figtree</item>
         <item name="android:letterSpacing">0</item>
-    </style>
-    
-    <!-- Component styles -->
-    <style name="SidebarIconStyle">
-        <item name="android:layout_width">@dimen/icon_size</item>
-        <item name="android:layout_height">@dimen/icon_size</item>
-        <item name="android:padding">@dimen/icon_padding</item>
-        <item name="android:focusable">true</item>
-        <item name="android:clickable">true</item>
-        <item name="android:background">@drawable/sidebar_item_bg</item>
-    </style>
-    
-    <style name="DeviceCardStyle">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">@dimen/device_card_height</item>
-        <item name="android:layout_margin">@dimen/device_card_margin</item>
-        <item name="android:focusable">true</item>
-        <item name="android:clickable">true</item>
     </style>
 </resources>
