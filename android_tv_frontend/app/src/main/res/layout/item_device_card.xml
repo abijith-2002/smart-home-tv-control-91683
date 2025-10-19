@@ -67,6 +67,8 @@
                 android:focusable="true"
                 android:clickable="true"
                 android:focusableInTouchMode="true"
+                android:showText="false"
+                android:text=""
                 app:useMaterialThemeColors="true"
                 app:thumbTint="@color/switch_handle_on"
                 app:trackTint="@color/card_on_bg" />
