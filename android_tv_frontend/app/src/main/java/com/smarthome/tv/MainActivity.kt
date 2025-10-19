@@ -100,7 +100,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showSection(section: Section) {
-        if (currentSection == section) return
         currentSection = section
         val fragment = when (section) {
             Section.DASHBOARD -> DashboardFragment.newInstance()

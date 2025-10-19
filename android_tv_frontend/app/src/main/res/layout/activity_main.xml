@@ -21,7 +21,8 @@
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:background="@color/colorSurface"
-        android:elevation="6dp">
+        android:elevation="6dp"
+        android:visibility="gone">
 
         <TextView
             android:id="@+id/navDashboard"

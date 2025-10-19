@@ -1,0 +1,176 @@
+:root {
+  /* Colors (subset resolved from design system colors explicitly provided) */
+  --color-1a1c20: #1a1c20;
+  --color-2e3036: #2e3036;
+  --color-d7e2ff: #d7e2ff;
+  --color-ffffff: #ffffff;
+  --color-f9f9ff: #f9f9ff;
+  --color-e3e3e3: #e3e3e3;
+  --color-abc7ff: #abc7ff;
+  --color-3e4759: #3e4759;
+  --color-565e71: #565e71;
+  --color-425e91: #425e91;
+  --color-284677: #284677;
+  --color-74777f: #74777f;
+
+  /* Typography variables (from design_system.typography) */
+  --typo-10-family: "Figtree", sans-serif;
+  --typo-10-size: 40px;
+  --typo-10-weight: 500;
+  --typo-10-line-height: 48px;
+  --typo-10-letter-spacing: 0px;
+  --typo-10-text-align: left;
+  --typo-10-color: var(--color-ffffff);
+
+  --typo-11-family: "Figtree", sans-serif;
+  --typo-11-size: 64px;
+  --typo-11-weight: 600;
+  --typo-11-line-height: 76.8px;
+  --typo-11-letter-spacing: 0px;
+  --typo-11-text-align: left;
+  --typo-11-color: var(--color-f9f9ff);
+
+  --typo-13-family: "Figtree", sans-serif;
+  --typo-13-size: 32px;
+  --typo-13-weight: 400;
+  --typo-13-line-height: 38.4px;
+  --typo-13-letter-spacing: 0px;
+  --typo-13-text-align: left;
+  --typo-13-color: var(--color-ffffff);
+
+  --typo-14-family: "Figtree", sans-serif;
+  --typo-14-size: 28px;
+  --typo-14-weight: 400;
+  --typo-14-line-height: 36px;
+  --typo-14-letter-spacing: 0px;
+  --typo-14-text-align: left;
+  --typo-14-color: var(--color-1a1c20);
+
+  --typo-15-family: "Figtree", sans-serif;
+  --typo-15-size: 40px;
+  --typo-15-weight: 400;
+  --typo-15-line-height: 48px;
+  --typo-15-letter-spacing: 0px;
+  --typo-15-text-align: left;
+  --typo-15-color: var(--color-ffffff);
+
+  --typo-16-family: "Figtree", sans-serif;
+  --typo-16-size: 24px;
+  --typo-16-weight: 600;
+  --typo-16-line-height: 28.8px;
+  --typo-16-letter-spacing: 0px;
+  --typo-16-text-align: left;
+  --typo-16-color: var(--color-ffffff);
+
+  /* Style tokens (from design_system.styles) */
+  /* style_0 */
+  --style-0-bg: var(--color-1a1c20);
+  /* style_1 */
+  --style-1-bg: var(--color-2e3036);
+  /* style_2 */
+  --style-2-bg: var(--color-d7e2ff);
+  --style-2-radius: 30px;
+  /* style_3 */
+  --style-3-bg: var(--color-ffffff);
+  /* style_4 */
+  --style-4-bg: var(--color-f9f9ff);
+  /* style_5 */
+  --style-5-bg: var(--color-e3e3e3);
+  /* style_7 */
+  --style-7-bg: var(--color-3e4759);
+  --style-7-border-color: var(--color-565e71);
+  --style-7-border-width: 4px;
+  --style-7-radius: 40px;
+  /* style_8 */
+  --style-8-radius: 100px;
+  /* style_9 */
+  --style-9-bg: var(--color-ffffff);
+  --style-9-border-color: var(--color-565e71);
+  --style-9-border-width: 1px;
+  /* style_10 */
+  --style-10-bg: var(--color-abc7ff);
+  --style-10-border-color: var(--color-565e71);
+  --style-10-border-width: 1px;
+  --style-10-radius: 100px;
+  /* style_11 */
+  --style-11-bg: var(--color-425e91);
+  --style-11-radius: 24px;
+  /* style_12 */
+  --style-12-radius: 23px;
+  /* style_13 */
+  --style-13-bg: var(--color-284677);
+  --style-13-border-color: var(--color-284677);
+  --style-13-border-width: 4px;
+  --style-13-radius: 40px;
+  /* style_14 */
+  --style-14-bg: var(--color-565e71);
+  --style-14-border-color: var(--color-3e4759);
+  --style-14-border-width: 2px;
+  --style-14-radius: 100px;
+  /* style_15 */
+  --style-15-bg: var(--color-d7e2ff);
+  --style-15-radius: 24px;
+  /* style_17 */
+  --style-17-bg: var(--color-425e91);
+  /* style_25 (with shadows) */
+  --style-25-bg: var(--color-abc7ff);
+  --style-25-radius: 100px;
+
+  /* Spacing variables (core subset plus frequently used exacts) */
+  --spacing-2: 2px;
+  --spacing-8: 8px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28-7869: 28.78688430786133px;
+  --spacing-32: 32px;
+  --spacing-33-3333: 33.333335876464844px;
+  --spacing-36-6316: 36.6315803527832px;
+  --spacing-40: 40px;
+  --spacing-41-6667: 41.666664123535156px;
+  --spacing-44-6316: 44.6315803527832px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-52-6316: 52.6315803527832px;
+  --spacing-60: 60px;
+  --spacing-68: 68px;
+  --spacing-72-2988: 72.29881286621094px;
+  --spacing-78-3333: 78.33333587646484px;
+  --spacing-78-9220: 78.92204284667969px;
+  --spacing-80: 80px;
+  --spacing-82: 82px;
+  --spacing-85: 85px;
+  --spacing-94: 94px;
+  --spacing-94-7065: 94.70645141601562px;
+  --spacing-103: 103px;
+  --spacing-120: 120px;
+  --spacing-142: 142px;
+  --spacing-145: 145px;
+  --spacing-1672: 1672px;
+  --spacing-1920: 1920px;
+
+  /* Shadows (from design_system.shadows) */
+  --shadow-0: 0px 2px 6px 2px rgba(0,0,0,0.5);
+  --shadow-1: 0px 1px 2px 0px rgba(0,0,0,0.5);
+}
+
+* { box-sizing: border-box; }
+
+.figma-screen {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background-color: var(--style-0-bg);
+  font-family: "Figtree", sans-serif;
+}
+
+/* Utility classes generated from styles (only used where needed) */
+.bg-style-1 { background-color: var(--style-1-bg); }
+.bg-style-2 { background-color: var(--style-2-bg); border-radius: var(--style-2-radius); }
+.bg-style-3 { background-color: var(--style-3-bg); }
+.bg-style-4 { background-color: var(--style-4-bg); }
+.bg-style-5 { background-color: var(--style-5-bg); }
+
+.shadow-md { box-shadow: var(--shadow-0), var(--shadow-1); }

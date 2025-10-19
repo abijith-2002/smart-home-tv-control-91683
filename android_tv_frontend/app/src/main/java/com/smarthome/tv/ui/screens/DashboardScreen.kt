@@ -1,31 +1,31 @@
 package com.smarthome.tv.ui.screens
 
-import android.content.Context
-import android.content.res.ColorStateList
+import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
-import androidx.cardview.widget.CardView
-import androidx.core.content.res.ResourcesCompat
+import android.webkit.WebChromeClient
+import android.webkit.WebSettings
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
 import com.smarthome.tv.R
 
 /**
  * PUBLIC_INTERFACE
  * DashboardFragment
- * Displays focusable device cards: Smart Light, Fan, Air Conditioner.
- * Each card is D-pad navigable, shows a visible focus state, and toggles
- * local state with a Toast on click.
+ * Hosts a full-screen WebView that loads the SmartHome_Home Figma-extracted
+ * HTML/CSS/JS screen from app assets. The page implements its own sidebar,
+ * device grid, TV D-Pad focus navigation, and DPAD_CENTER toggling.
+ *
+ * Entry behavior:
+ * - Loads file:///android_asset/smarthomehome-15-435.html
+ * - Enables JavaScript and file access for local assets
+ * - Requests focus so TV remotes send key events to the page
  */
 class DashboardFragment : Fragment() {
-
-    private var lightOn = false
-    private var fanOn = false
-    private var acOn = false
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,85 +35,49 @@ class DashboardFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_dashboard, container, false)
     }
 
+    @SuppressLint("SetJavaScriptEnabled")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        fun setupCard(card: CardView, label: TextView, icon: ImageView, title: String, initialOn: Boolean, onToggle: (Boolean) -> Unit) {
-            var isOn = initialOn
-            card.isFocusable = true
-            card.isClickable = true
-            updateCardUI(card, label, icon, title, isOn, requireContext())
+        val webView: WebView = view.findViewById(R.id.webView)
 
-            // Typography (Figtree)
-            val typeface = ResourcesCompat.getFont(requireContext(), R.font.figtree_family_medium)
-            label.typeface = typeface
+        // Configure WebView for local asset rendering and TV navigation
+        val settings: WebSettings = webView.settings
+        settings.javaScriptEnabled = true
+        settings.domStorageEnabled = true
+        settings.allowFileAccess = true
+        settings.allowContentAccess = true
+        settings.useWideViewPort = true
+        settings.loadWithOverviewMode = true
+        settings.builtInZoomControls = false
+        settings.displayZoomControls = false
+        settings.mediaPlaybackRequiresUserGesture = false
 
-            card.setOnClickListener {
-                isOn = !isOn
-                updateCardUI(card, label, icon, title, isOn, requireContext())
-                onToggle(isOn)
-            }
+        webView.isFocusable = true
+        webView.isFocusableInTouchMode = true
+        webView.requestFocus()
 
-            card.setOnFocusChangeListener { _, hasFocus ->
-                if (hasFocus) {
-                    card.cardElevation = 12f
-                    card.preventCornerOverlap = true
-                } else {
-                    card.cardElevation = 4f
+        webView.webViewClient = object : WebViewClient() {}
+        webView.webChromeClient = WebChromeClient()
+
+        // Let the page handle DPAD keys; do not consume here
+        webView.setOnKeyListener { _, keyCode, event ->
+            // Ensure DPAD keys reach the WebView/page; return false to let it handle
+            when (keyCode) {
+                KeyEvent.KEYCODE_DPAD_LEFT,
+                KeyEvent.KEYCODE_DPAD_RIGHT,
+                KeyEvent.KEYCODE_DPAD_UP,
+                KeyEvent.KEYCODE_DPAD_DOWN,
+                KeyEvent.KEYCODE_DPAD_CENTER,
+                KeyEvent.KEYCODE_ENTER,
+                KeyEvent.KEYCODE_SPACE -> {
+                    // Pass through
+                    false
                 }
+                else -> false
             }
         }
 
-        val cardLight: CardView = view.findViewById(R.id.cardLight)
-        val cardFan: CardView = view.findViewById(R.id.cardFan)
-        val cardAC: CardView = view.findViewById(R.id.cardAC)
-
-        setupCard(
-            cardLight,
-            view.findViewById(R.id.labelLight),
-            view.findViewById(R.id.iconLight),
-            getString(R.string.device_light),
-            lightOn
-        ) {
-            lightOn = it
-            Toast.makeText(requireContext(), "${getString(R.string.device_light)}: " + if (it) "On" else "Off", Toast.LENGTH_SHORT).show()
-        }
-
-        setupCard(
-            cardFan,
-            view.findViewById(R.id.labelFan),
-            view.findViewById(R.id.iconFan),
-            getString(R.string.device_fan),
-            fanOn
-        ) {
-            fanOn = it
-            Toast.makeText(requireContext(), "${getString(R.string.device_fan)}: " + if (it) "On" else "Off", Toast.LENGTH_SHORT).show()
-        }
-
-        setupCard(
-            cardAC,
-            view.findViewById(R.id.labelAC),
-            view.findViewById(R.id.iconAC),
-            getString(R.string.device_ac),
-            acOn
-        ) {
-            acOn = it
-            Toast.makeText(requireContext(), "${getString(R.string.device_ac)}: " + if (it) "On" else "Off", Toast.LENGTH_SHORT).show()
-        }
-
-        // Focus order left to sidebar via root container's nextFocusLeft is set from activity
-    }
-
-    private fun updateCardUI(
-        card: CardView,
-        label: TextView,
-        icon: ImageView,
-        title: String,
-        isOn: Boolean,
-        context: Context
-    ) {
-        label.text = "$title • ${if (isOn) "On" else "Off"}"
-        val color = if (isOn) R.color.colorSecondary else R.color.colorOnSurface
-        label.setTextColor(context.getColor(color))
-        icon.imageTintList = ColorStateList.valueOf(context.getColor(color))
+        // Load the SmartHome_Home screen from assets
+        webView.loadUrl("file:///android_asset/smarthomehome-15-435.html")
     }
 
     companion object {

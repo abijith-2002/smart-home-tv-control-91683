@@ -1,0 +1,167 @@
+.figma-screen .abs { position: absolute; }
+.figma-screen .rel { position: relative; }
+
+/* Root frame: SmartHome_Home already set by .figma-screen */
+
+/* Coordinate conversion: left = x - 404, top = y - 1393 */
+
+/* Sidebar group (15:469) */
+#sidebar-container { position: absolute; left: 0px; top: 0px; width: 103px; height: 1080px; }
+#sidebar-bg { position: absolute; left: 0px; top: 0px; width: 103px; height: 1080px; background-color: var(--style-1-bg); }
+
+/* Sidebar Settings icon component (15:471) */
+#settings-comp { position: absolute; left: 27px; top: 501px; width: 50px; height: 50px; }
+#settings-icon { position: absolute; left: 31.0625px; top: 505.1666px; width: 41.875px; height: 41.6667px; }
+
+/* Sidebar Home group (15:472) */
+#home-group { position: absolute; left: 9px; top: 259px; width: 85px; height: 72.2988px; }
+#home-bg { position: absolute; left: 0px; top: 0px; width: 85px; height: 72.2988px; background-color: var(--style-2-bg); border-radius: var(--style-2-radius); }
+#home-comp { position: absolute; left: 27px; top: 271px; width: 48.8506px; height: 48.8506px; }
+#home-comp-vector { position: absolute; left: 32.6991px; top: 278.4751px; width: 37.4524px; height: 33.9003px; }
+
+/* Sidebar History component (25:85) */
+#history-comp { position: absolute; left: 27px; top: 391px; width: 50px; height: 50px; }
+#history-comp-vector { position: absolute; left: 30.8593px; top: 397.2463px; width: 42.2813px; height: 37.5073px; }
+
+/* Header group (15:481) */
+#header-container { position: absolute; left: 146px; top: 42px; width: 441px; height: 82px; }
+#header-title { position: absolute; left: 234px; top: 47px; width: 353px; height: 77px;
+  font-family: var(--typo-11-family); font-size: var(--typo-11-size); font-weight: var(--typo-11-weight); line-height: var(--typo-11-line-height);
+  letter-spacing: var(--typo-11-letter-spacing); text-align: var(--typo-11-text-align); color: var(--typo-11-color);
+}
+#header-frame { position: absolute; left: 146px; top: 42px; width: 80px; height: 80px; background-color: var(--style-3-bg); }
+#header-frame-vector { position: absolute; left: 156px; top: 52px; width: 60px; height: 60px; }
+
+/* Sub header group (15:475) */
+#subheader-container { position: absolute; left: 150px; top: 190px; width: 1672px; height: 68px; }
+#devices-text { position: absolute; left: 150px; top: 191px; width: 142px; height: 48px;
+  font-family: var(--typo-15-family); font-size: var(--typo-15-size); font-weight: var(--typo-15-weight); line-height: var(--typo-15-line-height);
+  letter-spacing: var(--typo-15-letter-spacing); text-align: var(--typo-15-text-align); color: var(--typo-15-color);
+}
+#count-group { position: absolute; left: 317px; top: 190px; width: 50px; height: 50px; }
+#count-ellipse { position: absolute; left: 317px; top: 190px; width: 50px; height: 50px; background-color: var(--style-17-bg); border-radius: 50%; }
+#count-number { position: absolute; left: 335px; top: 201px; width: 14px; height: 29px;
+  font-family: var(--typo-16-family); font-size: var(--typo-16-size); font-weight: var(--typo-16-weight); line-height: var(--typo-16-line-height);
+  letter-spacing: var(--typo-16-letter-spacing); text-align: var(--typo-16-text-align); color: var(--typo-16-color);
+}
+
+/* Button - elevated (15:476) - it's at right side */
+#button-elevated { position: absolute; left: 1702px; top: 190px; width: 120px; height: 68px; }
+#button-content { position: absolute; left: 1649.5px; top: 190px; width: 225px; height: 68px; background-color: var(--style-25-bg); border-radius: var(--style-25-radius); box-shadow: var(--shadow-0), var(--shadow-1); }
+#button-icon { position: absolute; left: 1673.5px; top: 212px; width: 24px; height: 24px; }
+#button-icon-inner { position: absolute; left: 1678.5px; top: 217px; width: 14px; height: 14px; }
+#button-label { position: absolute; left: 1705.5px; top: 206px; width: 145px; height: 36px;
+  font-family: var(--typo-14-family); font-size: var(--typo-14-size); font-weight: var(--typo-14-weight); line-height: var(--typo-14-line-height);
+  letter-spacing: var(--typo-14-letter-spacing); text-align: var(--typo-14-text-align); color: var(--typo-14-color);
+}
+
+/* Cards row 1 (y: 1672) relative to root => top: 279px */
+#card1-container { position: absolute; left: 150px; top: 279px; width: 500px; height: 250px; }
+#card1-bg { position: absolute; left: 0px; top: 0px; width: 500px; height: 250px; background-color: var(--style-7-bg); border: var(--style-7-border-width) solid var(--style-7-border-color); border-radius: var(--style-7-radius); }
+#card1-devname { position: absolute; left: 49px; top: 316px; width: 402.8340148926px; height: 35.9098320007px; border-radius: var(--style-8-radius); }
+#card1-title { position: absolute; left: 49px; top: 316px; width: 261px; height: 33px;
+  font-family: var(--typo-13-family); font-size: var(--typo-13-size); font-weight: var(--typo-13-weight); line-height: var(--typo-13-line-height);
+  letter-spacing: var(--typo-13-letter-spacing); text-align: var(--typo-13-text-align); color: var(--typo-13-color);
+  /* style_9 adds background + border to text container if intended; text itself stays transparent */
+}
+#card1-switch { position: absolute; left: 549.2024px; top: 319.1229px; width: 52.6316px; height: 32.7869px; background-color: var(--style-10-bg); border: var(--style-10-border-width) solid var(--style-10-border-color); border-radius: var(--style-10-radius); }
+#card1-switch-handle-target { position: absolute; left: 562.2024px; top: 311.1229px; width: 48px; height: 48px; }
+#card1-switch-handle-inner { position: absolute; left: 566.2024px; top: 315.1229px; width: 40px; height: 40px; border-radius: var(--style-8-radius); }
+#card1-switch-handle-shape { position: absolute; left: 574.2024px; top: 323.1229px; width: 24px; height: 24px; background-color: var(--style-11-bg); border-radius: var(--style-11-radius); }
+#card1-switch-handle-dot { position: absolute; left: 585.2024px; top: 334.1229px; width: 2px; height: 2px; border-radius: var(--style-12-radius); }
+
+#card1-lightbulb { position: absolute; left: 30.0759px; top: 409.3886px; width: 94.7065px; height: 94.7065px; background-color: var(--style-3-bg); }
+#card1-lightbulb-vector { position: absolute; left: 49.8065px; top: 417.2808px; width: 55.2454px; height: 78.9220px; }
+
+/* Card 2 (15:456) */
+#card2-container { position: absolute; left: 676px; top: 279px; width: 500px; height: 250px; }
+#card2-bg { position: absolute; left: 0px; top: 0px; width: 500px; height: 250px; background-color: var(--style-13-bg); border: var(--style-13-border-width) solid var(--style-13-border-color); border-radius: var(--style-13-radius); }
+#card2-devname { position: absolute; left: 49px; top: 316px; width: 402.8340px; height: 35.9098px; border-radius: var(--style-8-radius); }
+#card2-title { position: absolute; left: 49px; top: 316px; width: 261px; height: 33px;
+  font-family: var(--typo-13-family); font-size: var(--typo-13-size); font-weight: var(--typo-13-weight); line-height: var(--typo-13-line-height);
+  letter-spacing: var(--typo-13-letter-spacing); text-align: var(--typo-13-text-align); color: var(--typo-13-color);
+}
+#card2-switch { position: absolute; left: 1075.2024px; top: 319.1229px; width: 52.6316px; height: 32.7869px; background-color: var(--style-14-bg); border: var(--style-14-border-width) solid var(--style-14-border-color); border-radius: var(--style-14-radius); }
+#card2-switch-handle-target { position: absolute; left: 1089.2024px; top: 311.1229px; width: 48px; height: 48px; }
+#card2-switch-handle-inner { position: absolute; left: 1093.2024px; top: 315.1229px; width: 40px; height: 40px; border-radius: var(--style-8-radius); }
+#card2-switch-handle-shape { position: absolute; left: 1105.2024px; top: 327.1229px; width: 16px; height: 16px; background-color: var(--style-15-bg); border-radius: var(--style-15-radius); }
+#card2-switch-handle-dot { position: absolute; left: 1112.2024px; top: 334.1229px; width: 2px; height: 2px; border-radius: var(--style-8-radius); }
+
+#card2-icon-frame { position: absolute; left: 35px; top: 416px; width: 94px; height: 94px; background-color: var(--style-3-bg); }
+#card2-icon-frame-vector { position: absolute; left: 43.8334px; top: 424.8334px; width: 78.3333px; height: 78.3333px; }
+
+/* Card 3 (15:449) */
+#card3-container { position: absolute; left: 1202px; top: 279px; width: 500px; height: 250px; }
+#card3-bg { position: absolute; left: 0px; top: 0px; width: 500px; height: 250px; background-color: var(--style-13-bg); border: var(--style-13-border-width) solid var(--style-13-border-color); border-radius: var(--style-13-radius); }
+#card3-devname { position: absolute; left: 49px; top: 316px; width: 402.8340px; height: 35.9098px; border-radius: var(--style-8-radius); }
+#card3-title { position: absolute; left: 49px; top: 316px; width: 261px; height: 33px;
+  font-family: var(--typo-13-family); font-size: var(--typo-13-size); font-weight: var(--typo-13-weight); line-height: var(--typo-13-line-height);
+  letter-spacing: var(--typo-13-letter-spacing); text-align: var(--typo-13-text-align); color: var(--typo-13-color);
+}
+#card3-switch { position: absolute; left: 1601.2024px; top: 319.1229px; width: 52.6316px; height: 32.7869px; background-color: var(--style-14-bg); border: var(--style-14-border-width) solid var(--style-14-border-color); border-radius: var(--style-14-radius); }
+#card3-switch-handle-target { position: absolute; left: 1615.2024px; top: 311.1229px; width: 48px; height: 48px; }
+#card3-switch-handle-inner { position: absolute; left: 1619.2024px; top: 315.1229px; width: 40px; height: 40px; border-radius: var(--style-8-radius); }
+#card3-switch-handle-shape { position: absolute; left: 1631.2024px; top: 327.1229px; width: 16px; height: 16px; background-color: var(--style-15-bg); border-radius: var(--style-15-radius); }
+#card3-switch-handle-dot { position: absolute; left: 1638.2024px; top: 334.1229px; width: 2px; height: 2px; border-radius: var(--style-8-radius); }
+
+#card3-icon-frame { position: absolute; left: 35px; top: 416px; width: 94px; height: 94px; background-color: var(--style-3-bg); }
+#card3-icon-frame-vector { position: absolute; left: 43.8334px; top: 424.8334px; width: 78.3333px; height: 78.3333px; }
+
+/* Cards row 2 (y: 1944) -> top: 551px */
+
+/* Card 4 (15:443) */
+#card4-container { position: absolute; left: 150px; top: 551px; width: 500px; height: 250px; }
+#card4-bg { position: absolute; left: 0px; top: 0px; width: 500px; height: 250px; background-color: var(--style-13-bg); border: var(--style-13-border-width) solid var(--style-13-border-color); border-radius: var(--style-13-radius); }
+#card4-devname { position: absolute; left: 49px; top: 588px; width: 402.8340px; height: 35.9098px; border-radius: var(--style-8-radius); }
+#card4-title { position: absolute; left: 49px; top: 588px; width: 261px; height: 33px;
+  font-family: var(--typo-13-family); font-size: var(--typo-13-size); font-weight: var(--typo-13-weight); line-height: var(--typo-13-line-height);
+  letter-spacing: var(--typo-13-letter-spacing); text-align: var(--typo-13-text-align); color: var(--typo-13-color);
+}
+#card4-switch { position: absolute; left: 549.2024px; top: 591.1229px; width: 52.6316px; height: 32.7869px; background-color: var(--style-14-bg); border: var(--style-14-border-width) solid var(--style-14-border-color); border-radius: var(--style-14-radius); }
+#card4-switch-handle-target { position: absolute; left: 563.2024px; top: 583.1229px; width: 48px; height: 48px; }
+#card4-switch-handle-inner { position: absolute; left: 567.2024px; top: 587.1229px; width: 40px; height: 40px; border-radius: var(--style-8-radius); }
+#card4-switch-handle-shape { position: absolute; left: 579.2024px; top: 599.1229px; width: 16px; height: 16px; background-color: var(--style-15-bg); border-radius: var(--style-15-radius); }
+#card4-switch-handle-dot { position: absolute; left: 586.2024px; top: 606.1229px; width: 2px; height: 2px; border-radius: var(--style-8-radius); }
+
+#card4-lightbulb { position: absolute; left: 30px; top: 680px; width: 94.7065px; height: 94.7065px; background-color: var(--style-3-bg); }
+#card4-lightbulb-vector { position: absolute; left: 49.7305px; top: 688.8921px; width: 55.2454px; height: 78.9220px; }
+
+/* Card 5 (15:436) */
+#card5-container { position: absolute; left: 676px; top: 551px; width: 500px; height: 250px; }
+#card5-bg { position: absolute; left: 0px; top: 0px; width: 500px; height: 250px; background-color: var(--style-7-bg); border: var(--style-7-border-width) solid var(--style-7-border-color); border-radius: var(--style-7-radius); }
+#card5-devname { position: absolute; left: 49px; top: 588px; width: 402.8340px; height: 35.9098px; border-radius: var(--style-8-radius); }
+#card5-title { position: absolute; left: 49px; top: 588px; width: 261px; height: 33px;
+  font-family: var(--typo-13-family); font-size: var(--typo-13-size); font-weight: var(--typo-13-weight); line-height: var(--typo-13-line-height);
+  letter-spacing: var(--typo-13-letter-spacing); text-align: var(--typo-13-text-align); color: var(--typo-13-color);
+}
+#card5-switch { position: absolute; left: 1075.2024px; top: 591.1229px; width: 52.6316px; height: 32.7869px; background-color: var(--style-10-bg); border: var(--style-10-border-width) solid var(--style-10-border-color); border-radius: var(--style-10-radius); }
+#card5-switch-handle-target { position: absolute; left: 1088.2024px; top: 583.1229px; width: 48px; height: 48px; }
+#card5-switch-handle-inner { position: absolute; left: 1092.2024px; top: 587.1229px; width: 40px; height: 40px; border-radius: var(--style-8-radius); }
+#card5-switch-handle-shape { position: absolute; left: 1100.2024px; top: 595.1229px; width: 24px; height: 24px; background-color: var(--style-11-bg); border-radius: var(--style-11-radius); }
+#card5-switch-handle-dot { position: absolute; left: 1111.2024px; top: 606.1229px; width: 2px; height: 2px; border-radius: var(--style-12-radius); }
+
+#card5-icon-frame { position: absolute; left: 35px; top: 680px; width: 94px; height: 94px; background-color: var(--style-3-bg); }
+#card5-icon-frame-vector { position: absolute; left: 43.8334px; top: 688.8333px; width: 78.3333px; height: 78.3333px; }
+
+/* Utility and interaction additions */
+.card { outline: none; }
+.card:focus { outline: 4px solid var(--style-2-bg); box-shadow: var(--shadow-0); }
+
+/* Generic ON/OFF state styles mapped to Figma tokens */
+.card.is-on .card-bg { background-color: var(--style-7-bg); border: var(--style-7-border-width) solid var(--style-7-border-color); border-radius: var(--style-7-radius); }
+.card.is-off .card-bg { background-color: var(--style-13-bg); border: var(--style-13-border-width) solid var(--style-13-border-color); border-radius: var(--style-13-radius); }
+
+.card.is-on .switch { background-color: var(--style-10-bg); border: var(--style-10-border-width) solid var(--style-10-border-color); border-radius: var(--style-10-radius); }
+.card.is-off .switch { background-color: var(--style-14-bg); border: var(--style-14-border-width) solid var(--style-14-border-color); border-radius: var(--style-14-radius); }
+
+.hidden { display: none; }
+
+/* Sidebar focus ring for icons */
+#home-group:focus #home-bg {
+  box-shadow: 0 0 0 4px var(--style-2-bg), var(--shadow-0);
+}
+#history-comp:focus,
+#settings-comp:focus {
+  outline: 4px solid var(--style-2-bg);
+  border-radius: 12px;
+}
