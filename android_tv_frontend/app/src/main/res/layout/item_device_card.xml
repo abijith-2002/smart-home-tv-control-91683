@@ -7,6 +7,7 @@
     android:layout_margin="@dimen/device_card_margin"
     android:focusable="true"
     android:clickable="true"
+    android:descendantFocusability="beforeDescendants"
     app:cardCornerRadius="@dimen/card_corner_radius"
     app:cardElevation="0dp">
 
@@ -55,28 +56,24 @@
                 android:text="Device Name"
                 android:textAppearance="@style/TextAppearance.DeviceName" />
 
-            <!-- Switch Toggle -->
-            <FrameLayout
-                android:id="@+id/switch_container"
+            <!-- Native Android Switch -->
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/device_switch"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <View
-                    android:id="@+id/switch_bg"
-                    android:layout_width="@dimen/switch_width"
-                    android:layout_height="@dimen/switch_height"
-                    android:background="@drawable/switch_on_bg" />
-
-                <TextView
-                    android:id="@+id/switch_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"
-                    android:text="@string/device_on"
-                    android:textAppearance="@style/TextAppearance.Switch" />
-            </FrameLayout>
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/switch_width"
+                android:minHeight="@dimen/switch_height"
+                android:background="@null"
+                android:focusable="true"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:textOn="@string/device_on"
+                android:textOff="@string/device_off"
+                android:textAppearance="@style/TextAppearance.Switch"
+                app:showText="true"
+                app:switchMinWidth="@dimen/switch_width"
+                app:thumbTint="@color/switch_handle_on"
+                app:trackTint="@color/card_on_bg" />
         </LinearLayout>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
