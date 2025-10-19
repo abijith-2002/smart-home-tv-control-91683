@@ -15,7 +15,7 @@
     
     <!-- Typography styles using Figtree font (night mode) with 7% reduction -->
     <style name="TextAppearance.Title" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">45sp</item>
+        <item name="android:textSize">42sp</item>
         <item name="android:textColor">@color/light_gray</item>
         <item name="android:fontFamily">@font/figtree</item>
         <item name="fontFamily">@font/figtree</item>
