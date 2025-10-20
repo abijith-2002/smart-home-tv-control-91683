@@ -10,12 +10,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/settings"
-        android:textAppearance="@style/TextAppearance.Header" />
+        android:textAppearance="@style/TextAppearance.HeadingXL" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_large"
         android:text="Settings options will be displayed here"
-        android:textAppearance="@style/TextAppearance.DeviceName" />
+        android:textAppearance="@style/TextAppearance.Subtitle" />
 </LinearLayout>

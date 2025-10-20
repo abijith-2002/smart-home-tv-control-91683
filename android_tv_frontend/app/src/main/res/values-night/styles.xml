@@ -13,46 +13,69 @@
         <item name="colorSwitchThumbNormal">@color/switch_handle_off</item>
     </style>
     
-    <!-- Typography styles using Figtree font (night mode) with 7% reduction -->
-    <style name="TextAppearance.Title" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">42sp</item>
+    <!-- Night Typography styles using tokens -->
+    <style name="TextAppearance.HeadingXXL" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_xxl</item>
         <item name="android:textColor">@color/light_gray</item>
         <item name="android:fontFamily">@font/figtree</item>
         <item name="fontFamily">@font/figtree</item>
         <item name="android:letterSpacing">0</item>
     </style>
     
-    <style name="TextAppearance.Header" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">29sp</item>
+    <style name="TextAppearance.HeadingXL" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_xl</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">@font/figtree</item>
         <item name="fontFamily">@font/figtree</item>
         <item name="android:letterSpacing">0</item>
     </style>
     
-    <style name="TextAppearance.DeviceName" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">21sp</item>
+    <style name="TextAppearance.CardTitle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_lg</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">@font/figtree</item>
         <item name="fontFamily">@font/figtree</item>
         <item name="android:letterSpacing">0</item>
     </style>
     
-    <style name="TextAppearance.Switch" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">14sp</item>
+    <style name="TextAppearance.Subtitle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/figtree</item>
+        <item name="fontFamily">@font/figtree</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+    
+    <style name="TextAppearance.Label" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_sm</item>
         <item name="android:textColor">@color/text</item>
         <item name="android:fontFamily">@font/figtree</item>
         <item name="fontFamily">@font/figtree</item>
         <item name="android:letterSpacing">0</item>
     </style>
     
-    <style name="TextAppearance.CountBadge" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">18sp</item>
+    <style name="TextAppearance.BadgeCount" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_md</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:fontFamily">@font/figtree</item>
         <item name="fontFamily">@font/figtree</item>
         <item name="android:letterSpacing">0</item>
     </style>
+
+    <style name="TextAppearance.SidebarCaption" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/figtree</item>
+        <item name="fontFamily">@font/figtree</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- Backwards-compatible aliases -->
+    <style name="TextAppearance.Title" parent="TextAppearance.HeadingXXL" />
+    <style name="TextAppearance.Header" parent="TextAppearance.HeadingXL" />
+    <style name="TextAppearance.DeviceName" parent="TextAppearance.CardTitle" />
+    <style name="TextAppearance.Switch" parent="TextAppearance.Label" />
+    <style name="TextAppearance.CountBadge" parent="TextAppearance.BadgeCount" />
     
     <!-- Custom MaterialSwitch Style with specific colors and border -->
     <style name="CustomMaterialSwitch" parent="Widget.Material3.CompoundButton.MaterialSwitch">

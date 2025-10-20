@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_large"
                 android:text="@string/smarthome"
-                android:textAppearance="@style/TextAppearance.Title" />
+                android:textAppearance="@style/TextAppearance.HeadingXXL" />
         </LinearLayout>
 
         <!-- Subheader with Devices count and Add button -->
@@ -67,7 +67,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/devices"
-                    android:textAppearance="@style/TextAppearance.Header" />
+                    android:textAppearance="@style/TextAppearance.HeadingXL" />
 
                 <FrameLayout
                     android:layout_width="@dimen/count_badge_size"
@@ -82,7 +82,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="6"
-                        android:textAppearance="@style/TextAppearance.CountBadge" />
+                        android:textAppearance="@style/TextAppearance.BadgeCount" />
                 </FrameLayout>
             </LinearLayout>
 

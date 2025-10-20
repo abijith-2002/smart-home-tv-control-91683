@@ -14,8 +14,16 @@
     
     <!-- Device card icon -->
     <dimen name="device_icon_size">54dp</dimen>
+
+    <!-- RESPONSIVE TYPOGRAPHY SCALE OVERRIDES -->
+    <dimen name="text_xs">16sp</dimen>
+    <dimen name="text_sm">18sp</dimen>
+    <dimen name="text_md">20sp</dimen>
+    <dimen name="text_lg">24sp</dimen>
+    <dimen name="text_xl">34sp</dimen>
+    <dimen name="text_xxl">48sp</dimen>
     
-    <!-- Typography sizes -->
+    <!-- Legacy (prefer text_* tokens) -->
     <dimen name="title_text_size">36sp</dimen>
     <dimen name="header_text_size">23sp</dimen>
     <dimen name="device_name_text_size">17sp</dimen>

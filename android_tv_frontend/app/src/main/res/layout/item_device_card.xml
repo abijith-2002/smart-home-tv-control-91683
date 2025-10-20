@@ -64,7 +64,7 @@
                 android:layout_weight="1"
                 android:layout_marginStart="@dimen/device_icon_text_spacing"
                 android:text="Device Name"
-                android:textAppearance="@style/TextAppearance.DeviceName" />
+                android:textAppearance="@style/TextAppearance.CardTitle" />
 
             <!-- Material3 Switch with custom colors and 2dp border -->
             <com.google.android.material.materialswitch.MaterialSwitch

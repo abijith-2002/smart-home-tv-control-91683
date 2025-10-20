@@ -14,4 +14,13 @@
     <!-- Icon sizes for high density -->
     <dimen name="icon_size">52dp</dimen>
     <dimen name="icon_padding">8dp</dimen>
+
+    <!-- RESPONSIVE TYPOGRAPHY SCALE OVERRIDES (xxhdpi) -->
+    <!-- Slight bump to maintain readability on higher densities -->
+    <dimen name="text_xs">15sp</dimen>
+    <dimen name="text_sm">17sp</dimen>
+    <dimen name="text_md">19sp</dimen>
+    <dimen name="text_lg">23sp</dimen>
+    <dimen name="text_xl">31sp</dimen>
+    <dimen name="text_xxl">44sp</dimen>
 </resources>
