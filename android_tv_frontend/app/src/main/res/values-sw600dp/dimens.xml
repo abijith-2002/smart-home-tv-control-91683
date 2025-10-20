@@ -6,7 +6,7 @@
     <dimen name="device_card_height">165dp</dimen>
     
     <!-- Optimized spacing for larger screens -->
-    <dimen name="device_card_margin">5dp</dimen>
+    <dimen name="device_card_margin">2dp</dimen>
     
     <!-- Margins and spacing -->
     <dimen name="margin_large">16dp</dimen>
@@ -21,6 +21,6 @@
     <dimen name="device_name_text_size">21sp</dimen>
     
     <!-- RecyclerView grid padding -->
-    <dimen name="grid_horizontal_padding">5dp</dimen>
-    <dimen name="grid_vertical_padding">3dp</dimen>
+    <dimen name="grid_horizontal_padding">1dp</dimen>
+    <dimen name="grid_vertical_padding">1dp</dimen>
 </resources>

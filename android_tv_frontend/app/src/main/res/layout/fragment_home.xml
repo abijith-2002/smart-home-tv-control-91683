@@ -108,7 +108,7 @@
             android:clipToPadding="false"
             android:clipChildren="false"
             android:paddingTop="@dimen/grid_vertical_padding"
-            android:paddingBottom="@dimen/margin_medium"
+            android:paddingBottom="@dimen/grid_vertical_padding"
             android:paddingStart="@dimen/grid_horizontal_padding"
             android:paddingEnd="@dimen/grid_horizontal_padding" />
     </LinearLayout>

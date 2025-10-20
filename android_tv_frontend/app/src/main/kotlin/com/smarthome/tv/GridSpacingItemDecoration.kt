@@ -35,20 +35,16 @@ class GridSpacingItemDecoration(
             }
             outRect.bottom = spacing
         } else {
-            // Calculate even distribution of spacing
-            val halfSpacing = spacing / 2
-            
-            // Apply consistent horizontal spacing
-            outRect.left = if (column == 0) 0 else halfSpacing
-            outRect.right = if (column == spanCount - 1) 0 else halfSpacing
-            
-            // Apply vertical spacing (skip top for first row)
-            if (position >= spanCount) {
-                outRect.top = spacing
-            }
-            
-            // Reserve bottom space for focus elevation
-            outRect.bottom = halfSpacing
+            // No edge gutters: distribute spacing only between items
+            // Ensures inner gaps total to 'spacing' while edges remain 0
+            outRect.left = (column * spacing) / spanCount
+            outRect.right = spacing - ((column + 1) * spacing) / spanCount
+
+            // Vertical: only apply top for rows after the first to avoid double gaps
+            outRect.top = if (position >= spanCount) spacing else 0
+
+            // Avoid adding extra bottom spacing which can create unintended gutters
+            outRect.bottom = 0
         }
     }
 }

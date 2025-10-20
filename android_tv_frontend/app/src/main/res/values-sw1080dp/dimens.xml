@@ -6,7 +6,7 @@
     <dimen name="device_card_height">145dp</dimen>
     
     <!-- Minimal spacing for very large screens with focus headroom -->
-    <dimen name="device_card_margin">3dp</dimen>
+    <dimen name="device_card_margin">2dp</dimen>
     
     <!-- Margins and spacing -->
     <dimen name="margin_large">12dp</dimen>
@@ -21,6 +21,6 @@
     <dimen name="device_name_text_size">17sp</dimen>
     
     <!-- RecyclerView grid padding -->
-    <dimen name="grid_horizontal_padding">3dp</dimen>
-    <dimen name="grid_vertical_padding">2dp</dimen>
+    <dimen name="grid_horizontal_padding">1dp</dimen>
+    <dimen name="grid_vertical_padding">1dp</dimen>
 </resources>
