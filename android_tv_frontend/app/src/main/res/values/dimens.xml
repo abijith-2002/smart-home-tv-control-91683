@@ -14,6 +14,12 @@
     <!-- Icon sizes -->
     <dimen name="icon_size">48dp</dimen>
     <dimen name="icon_padding">6dp</dimen>
+
+    <!-- Sidebar specific icon touch target and padding for pill -->
+    <dimen name="sidebar_icon_touch_target">56dp</dimen>
+    <dimen name="sidebar_icon_padding">12dp</dimen>
+    <!-- Actual glyph size inside the touch target (28-32dp target) -->
+    <dimen name="sidebar_glyph_size">30dp</dimen>
     <dimen name="device_icon_size">74dp</dimen>
     <dimen name="device_icon_padding">9dp</dimen>
     

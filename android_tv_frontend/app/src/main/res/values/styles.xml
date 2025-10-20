@@ -64,15 +64,15 @@
         <item name="android:background">@drawable/sidebar_item_bg</item>
     </style>
 
-    <!-- TV-optimized sidebar icon style with focus background + tint selector -->
+    <!-- TV-optimized sidebar icon style with subtle pill background on focus + tint selector -->
     <style name="SidebarIconStyleTv">
-        <item name="android:layout_width">@dimen/icon_size</item>
-        <item name="android:layout_height">@dimen/icon_size</item>
-        <item name="android:padding">@dimen/icon_padding</item>
+        <item name="android:layout_width">@dimen/sidebar_icon_touch_target</item>
+        <item name="android:layout_height">@dimen/sidebar_icon_touch_target</item>
+        <item name="android:padding">@dimen/sidebar_icon_padding</item>
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
-        <!-- Focus outline background (stroke-only); default stays transparent -->
-        <item name="android:background">@drawable/sidebar_item_bg_selector</item>
+        <!-- Subtle rounded pill appears only on focus -->
+        <item name="android:background">@drawable/sidebar_focus_pill</item>
         <!-- Icon tint changes with focus -->
         <item name="android:tint">@drawable/sidebar_icon_tint_selector</item>
         <item name="tint">@drawable/sidebar_icon_tint_selector</item>
