@@ -4,7 +4,8 @@
     android:height="50dp"
     android:viewportWidth="50"
     android:viewportHeight="50">
-    <path
-        android:fillColor="#425E91"
-        android:pathData="M25,25m-25,0a25,25 0,1 1,50 0a25,25 0,1 1,-50 0" />
+    <!-- Transparent background; no filled circle -->
+    <group>
+        <!-- Intentionally left without background; actual fan glyph should be drawn by mode_fan_24 elsewhere -->
+    </group>
 </vector>

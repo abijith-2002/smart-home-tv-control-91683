@@ -24,6 +24,7 @@
             android:layout_marginBottom="@dimen/sidebar_icon_margin_bottom"
             android:contentDescription="@string/devices"
             android:padding="12dp"
+            android:background="@android:color/transparent"
             android:nextFocusDown="@id/nav_activity"
             android:nextFocusUp="@id/nav_settings"
             app:srcCompat="@drawable/ic_home" />
@@ -36,6 +37,7 @@
             android:layout_marginBottom="@dimen/sidebar_icon_margin_bottom"
             android:contentDescription="@string/activity"
             android:padding="@dimen/icon_padding"
+            android:background="@android:color/transparent"
             android:nextFocusUp="@id/nav_home"
             android:nextFocusDown="@id/nav_settings"
             app:srcCompat="@drawable/ic_history" />
@@ -47,6 +49,7 @@
             android:layout_height="@dimen/icon_size"
             android:contentDescription="@string/settings"
             android:padding="@dimen/icon_padding"
+            android:background="@android:color/transparent"
             android:nextFocusUp="@id/nav_activity"
             android:nextFocusDown="@id/nav_home"
             app:srcCompat="@drawable/ic_settings" />

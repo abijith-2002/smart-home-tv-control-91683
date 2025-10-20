@@ -25,7 +25,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginStart="@dimen/device_icon_start_margin"
             android:layout_marginBottom="@dimen/device_icon_bottom_margin"
-            android:background="@color/surface">
+            android:background="@android:color/transparent">
 
             <ImageView
                 android:id="@+id/device_icon"

@@ -71,7 +71,7 @@
         <item name="android:padding">@dimen/icon_padding</item>
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
-        <!-- Focus pill background -->
+        <!-- Focus outline background (stroke-only); default stays transparent -->
         <item name="android:background">@drawable/sidebar_item_bg_selector</item>
         <!-- Icon tint changes with focus -->
         <item name="android:tint">@drawable/sidebar_icon_tint_selector</item>
