@@ -71,13 +71,17 @@
         <item name="android:padding">@dimen/icon_padding</item>
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
-        <!-- Focus outline background (transparent by default) -->
+
+        <!-- Force fully transparent default background; focus outline handled by selector -->
         <item name="android:background">@drawable/sidebar_item_bg_selector</item>
+
         <!-- Icon tint changes with focus; default light gray -->
         <item name="android:tint">@drawable/sidebar_icon_tint_selector</item>
         <item name="tint">@drawable/sidebar_icon_tint_selector</item>
-        <!-- Remove ripples to avoid white mask on TV -->
+
+        <!-- Remove ripples/masks on TV completely -->
         <item name="android:foreground">@null</item>
+        <item name="android:stateListAnimator">@null</item>
     </style>
     
     <style name="DeviceCardStyle">

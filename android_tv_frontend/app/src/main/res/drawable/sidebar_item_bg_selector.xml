@@ -8,6 +8,7 @@
             <stroke android:width="2dp" android:color="@color/focus_color" />
         </shape>
     </item>
+
     <!-- Pressed: same as focused on TV -->
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
@@ -16,11 +17,12 @@
             <stroke android:width="2dp" android:color="@color/focus_color" />
         </shape>
     </item>
-    <!-- Default: fully transparent -->
+
+    <!-- DEBUG: transparent by default with a faint green alpha to detect if this layer is showing (will remove later) -->
     <item>
         <shape android:shape="rectangle">
             <corners android:radius="30dp" />
-            <solid android:color="@android:color/transparent" />
+            <solid android:color="#0018FF00" />
         </shape>
     </item>
 </selector>
