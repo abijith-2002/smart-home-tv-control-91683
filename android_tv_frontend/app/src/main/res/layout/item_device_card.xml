@@ -6,8 +6,8 @@
     android:layout_height="@dimen/device_card_height"
     android:layout_marginStart="@dimen/device_card_margin"
     android:layout_marginEnd="@dimen/device_card_margin"
-    android:layout_marginTop="@dimen/device_card_margin_large_focus_space"
-    android:layout_marginBottom="@dimen/device_card_margin_large_focus_space"
+    android:layout_marginTop="@dimen/device_card_margin"
+    android:layout_marginBottom="@dimen/device_card_margin"
     android:focusable="true"
     android:clickable="true"
     android:descendantFocusability="beforeDescendants"
@@ -54,13 +54,15 @@
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:paddingStart="0dp"
-            android:paddingEnd="0dp">
+            android:paddingEnd="0dp"
+            android:baselineAligned="true">
 
             <TextView
                 android:id="@+id/device_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_marginStart="@dimen/device_icon_text_spacing"
                 android:text="Device Name"
                 android:textAppearance="@style/TextAppearance.DeviceName" />
 

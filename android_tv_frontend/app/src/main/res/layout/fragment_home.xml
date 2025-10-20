@@ -107,9 +107,9 @@
             android:layout_height="wrap_content"
             android:clipToPadding="false"
             android:clipChildren="false"
-            android:paddingTop="@dimen/margin_medium"
-            android:paddingBottom="@dimen/margin_xlarge"
-            android:paddingStart="@dimen/margin_medium"
-            android:paddingEnd="@dimen/margin_medium" />
+            android:paddingTop="@dimen/grid_vertical_padding"
+            android:paddingBottom="@dimen/margin_large"
+            android:paddingStart="@dimen/grid_horizontal_padding"
+            android:paddingEnd="@dimen/grid_horizontal_padding" />
     </LinearLayout>
 </ScrollView>
