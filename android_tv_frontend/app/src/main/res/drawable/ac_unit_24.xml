@@ -1,10 +1,9 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="24dp"
     android:height="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24">
-    <!-- AC snowflake icon only; transparent background -->
-    <path
-        android:fillColor="#E3E3E3"
-        android:pathData="M11 21v-3.17l-2.24 2.24-1.06-1.06L11 15.65V13H8.35l-3.36 3.36-1.06-1.06L6.83 12 3.93 9.1l1.06-1.06L8.35 11H11V8.35L7.7 5.06 8.76 4l2.24 2.24V3h1.5v3.24L14.74 4l1.06 1.06L12.5 8.35V11h2.65l3.36-3.36 1.06 1.06L17.17 12l2.9 2.9-1.06 1.06L15.15 13H12.5v2.65l3.3 3.29-1.06 1.06L12.5 17.17V21H11Z"/>
+    android:viewportWidth="960"
+    android:viewportHeight="960">
+  <path
+      android:pathData="M440,880v-166L310,842l-56,-56 186,-186v-80h-80L174,706l-56,-56 128,-130L80,520v-80h166L118,310l56,-56 186,186h80v-80L254,174l56,-56 130,128v-166h80v166l130,-128 56,56 -186,186v80h80l186,-186 56,56 -128,130h166v80L714,520l128,130 -56,56 -186,-186h-80v80l186,186 -56,56 -130,-128v166h-80Z"
+      android:fillColor="#e3e3e3"/>
 </vector>

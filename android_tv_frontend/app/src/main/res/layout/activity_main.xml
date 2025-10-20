@@ -18,40 +18,37 @@
 
         <ImageView
             android:id="@+id/nav_home"
+            style="@style/SidebarIconStyleTv"
             android:layout_width="@dimen/home_icon_width"
             android:layout_height="@dimen/home_icon_height"
             android:layout_marginBottom="@dimen/sidebar_icon_margin_bottom"
-            android:background="@null"
-            android:adjustViewBounds="true"
-            android:scaleType="center"
             android:contentDescription="@string/devices"
-            android:focusable="true"
             android:padding="12dp"
+            android:nextFocusDown="@id/nav_activity"
+            android:nextFocusUp="@id/nav_settings"
             app:srcCompat="@drawable/ic_home" />
 
         <ImageView
             android:id="@+id/nav_activity"
+            style="@style/SidebarIconStyleTv"
             android:layout_width="@dimen/icon_size"
             android:layout_height="@dimen/icon_size"
             android:layout_marginBottom="@dimen/sidebar_icon_margin_bottom"
-            android:background="@null"
-            android:adjustViewBounds="true"
-            android:scaleType="center"
             android:contentDescription="@string/activity"
-            android:focusable="true"
             android:padding="@dimen/icon_padding"
+            android:nextFocusUp="@id/nav_home"
+            android:nextFocusDown="@id/nav_settings"
             app:srcCompat="@drawable/ic_history" />
 
         <ImageView
             android:id="@+id/nav_settings"
+            style="@style/SidebarIconStyleTv"
             android:layout_width="@dimen/icon_size"
             android:layout_height="@dimen/icon_size"
-            android:background="@null"
-            android:adjustViewBounds="true"
-            android:scaleType="center"
             android:contentDescription="@string/settings"
-            android:focusable="true"
             android:padding="@dimen/icon_padding"
+            android:nextFocusUp="@id/nav_activity"
+            android:nextFocusDown="@id/nav_home"
             app:srcCompat="@drawable/ic_settings" />
     </LinearLayout>
 

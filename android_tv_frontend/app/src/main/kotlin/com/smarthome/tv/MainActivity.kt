@@ -1,6 +1,7 @@
 package com.smarthome.tv
 
 import android.os.Bundle
+import android.view.View
 import android.widget.FrameLayout
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
@@ -38,18 +39,34 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // Setup sidebar navigation with click handlers
+    // Setup sidebar navigation with click handlers and focus effects
     private fun setupNavigation() {
+        // Shared focus change listener to scale and improve affordance
+        val focusListener = View.OnFocusChangeListener { v: View, hasFocus: Boolean ->
+            val scale = if (hasFocus) 1.08f else 1.0f
+            v.animate().scaleX(scale).scaleY(scale).setDuration(120).start()
+        }
+
+        navHome.onFocusChangeListener = focusListener
+        navActivity.onFocusChangeListener = focusListener
+        navSettings.onFocusChangeListener = focusListener
+
+        // Click handlers load fragments and update a11y announcement context
         navHome.setOnClickListener {
             loadFragment(HomeFragment())
+            // PUBLIC_INTERFACE
+            /** Update accessibility announcement for focused navigation item. */
+            navHome.contentDescription = getString(R.string.devices)
         }
 
         navActivity.setOnClickListener {
             loadFragment(ActivityFragment())
+            navActivity.contentDescription = getString(R.string.activity)
         }
 
         navSettings.setOnClickListener {
             loadFragment(SettingsFragment())
+            navSettings.contentDescription = getString(R.string.settings)
         }
     }
 
