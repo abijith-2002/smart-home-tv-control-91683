@@ -71,9 +71,9 @@
         <item name="android:padding">@dimen/sidebar_icon_padding</item>
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
-        <!-- Subtle rounded pill appears only on focus -->
+        <!-- Subtle rounded pill appears only on focus; unchanged -->
         <item name="android:background">@drawable/sidebar_focus_pill</item>
-        <!-- Icon tint changes with focus -->
+        <!-- Icon tint changes with focus; unchanged -->
         <item name="android:tint">@drawable/sidebar_icon_tint_selector</item>
         <item name="tint">@drawable/sidebar_icon_tint_selector</item>
         <!-- Remove default ripples for TV to avoid visual noise -->

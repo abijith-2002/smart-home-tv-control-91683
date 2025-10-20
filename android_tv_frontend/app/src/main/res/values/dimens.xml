@@ -16,11 +16,14 @@
     <dimen name="icon_padding">6dp</dimen>
 
     <!-- Sidebar specific icon touch target and padding for pill -->
-    <dimen name="sidebar_icon_touch_target">56dp</dimen>
-    <dimen name="sidebar_icon_padding">12dp</dimen>
-    <!-- Actual glyph size inside the touch target (28-32dp target) -->
-    <dimen name="sidebar_glyph_size">30dp</dimen>
-    <dimen name="device_icon_size">74dp</dimen>
+    <!-- Keep TV-friendly touch target; slightly increase padding to comfortably wrap larger glyph -->
+    <dimen name="sidebar_icon_touch_target">60dp</dimen>
+    <dimen name="sidebar_icon_padding">13dp</dimen>
+    <!-- Increase actual glyph size inside the touch target from ~30dp to ~35dp -->
+    <dimen name="sidebar_glyph_size">35dp</dimen>
+
+    <!-- Device card icon: bump slightly for proportionality -->
+    <dimen name="device_icon_size">78dp</dimen>
     <dimen name="device_icon_padding">9dp</dimen>
     
     <!-- Margins and spacing -->

@@ -27,6 +27,8 @@
             android:background="@android:color/transparent"
             android:nextFocusDown="@id/nav_activity"
             android:nextFocusUp="@id/nav_settings"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
             app:srcCompat="@drawable/ic_home" />
 
         <ImageView
@@ -40,6 +42,8 @@
             android:background="@android:color/transparent"
             android:nextFocusUp="@id/nav_home"
             android:nextFocusDown="@id/nav_settings"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
             app:srcCompat="@drawable/ic_history" />
 
         <ImageView
@@ -52,6 +56,8 @@
             android:background="@android:color/transparent"
             android:nextFocusUp="@id/nav_activity"
             android:nextFocusDown="@id/nav_home"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
             app:srcCompat="@drawable/ic_settings" />
     </LinearLayout>
 

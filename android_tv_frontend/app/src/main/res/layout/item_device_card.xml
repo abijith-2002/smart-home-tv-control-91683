@@ -35,7 +35,7 @@
                 android:adjustViewBounds="true"
                 android:contentDescription="Device Icon"
                 android:padding="@dimen/device_icon_padding"
-                android:scaleType="center"
+                android:scaleType="centerInside"
                 app:srcCompat="@drawable/lightbulb_24" />
         </FrameLayout>
 
