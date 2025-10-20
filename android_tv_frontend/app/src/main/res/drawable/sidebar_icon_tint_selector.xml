@@ -3,6 +3,6 @@
     <!-- Focused/Pressed state: icon tinted primary -->
     <item android:state_focused="true" android:color="@color/focus_color" />
     <item android:state_pressed="true" android:color="@color/focus_color" />
-    <!-- Default: light gray, no white to avoid white box feel on TVs -->
-    <item android:color="@color/light_gray" />
+    <!-- Default: white for sidebar icons -->
+    <item android:color="@color/white" />
 </selector>
