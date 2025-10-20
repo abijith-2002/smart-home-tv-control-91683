@@ -61,4 +61,10 @@
         <item name="thumbTint">@drawable/switch_thumb_selector</item>
         <item name="android:background">@drawable/switch_track_border</item>
     </style>
+
+    <!-- Parity style token (if used by OEM overrides) -->
+    <style name="DeviceCardStyle">
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardPreventCornerOverlap">true</item>
+    </style>
 </resources>

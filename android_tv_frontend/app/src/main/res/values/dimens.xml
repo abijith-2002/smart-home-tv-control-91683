@@ -16,15 +16,13 @@
     <dimen name="icon_padding">6dp</dimen>
 
     <!-- Sidebar specific icon touch target and padding for pill -->
-    <!-- Keep TV-friendly touch target; slightly increase padding to comfortably wrap larger glyph -->
     <dimen name="sidebar_icon_touch_target">60dp</dimen>
     <dimen name="sidebar_icon_padding">13dp</dimen>
-    <!-- Increase actual glyph size inside the touch target from ~30dp to ~35dp -->
     <dimen name="sidebar_glyph_size">35dp</dimen>
 
-    <!-- Device card icon: bump slightly for proportionality -->
-    <dimen name="device_icon_size">78dp</dimen>
-    <dimen name="device_icon_padding">9dp</dimen>
+    <!-- Device card icon -->
+    <dimen name="device_icon_size">74dp</dimen>
+    <dimen name="device_icon_padding">8dp</dimen>
     
     <!-- Margins and spacing -->
     <dimen name="margin_small">6dp</dimen>
@@ -50,9 +48,11 @@
     <dimen name="count_badge_padding">8dp</dimen>
     
     <!-- Device card specific -->
-    <dimen name="device_card_height">199dp</dimen>
-    <dimen name="device_card_margin">6dp</dimen>
-    <dimen name="device_icon_bottom_margin">11dp</dimen>
-    <dimen name="device_icon_start_margin">11dp</dimen>
-    <dimen name="device_name_top_margin">21dp</dimen>
+    <!-- Slightly reduced height and increased margins to allow focus elevation/shadow room -->
+    <dimen name="device_card_height">188dp</dimen>
+    <dimen name="device_card_margin">8dp</dimen>
+    <dimen name="device_card_margin_large_focus_space">12dp</dimen>
+    <dimen name="device_icon_bottom_margin">10dp</dimen>
+    <dimen name="device_icon_start_margin">10dp</dimen>
+    <dimen name="device_name_top_margin">20dp</dimen>
 </resources>

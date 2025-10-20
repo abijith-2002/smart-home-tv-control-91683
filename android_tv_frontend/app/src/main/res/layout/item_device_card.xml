@@ -4,10 +4,16 @@
     android:id="@+id/device_card"
     android:layout_width="match_parent"
     android:layout_height="@dimen/device_card_height"
-    android:layout_margin="@dimen/device_card_margin"
+    android:layout_marginStart="@dimen/device_card_margin"
+    android:layout_marginEnd="@dimen/device_card_margin"
+    android:layout_marginTop="@dimen/device_card_margin_large_focus_space"
+    android:layout_marginBottom="@dimen/device_card_margin_large_focus_space"
     android:focusable="true"
     android:clickable="true"
     android:descendantFocusability="beforeDescendants"
+    android:clipToOutline="false"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true"
     app:cardCornerRadius="@dimen/card_corner_radius"
     app:cardElevation="0dp">
 

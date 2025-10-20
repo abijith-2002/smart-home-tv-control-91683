@@ -64,12 +64,13 @@ class DeviceAdapter(
             // Handle focus changes on card
             deviceCard.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
                 if (hasFocus) {
-                    deviceCard.scaleX = 1.05f
-                    deviceCard.scaleY = 1.05f
+                    deviceCard.animate().scaleX(1.05f).scaleY(1.05f).setDuration(120).start()
+                    // Use translationZ to ensure shadow/elevation is respected across API levels
+                    deviceCard.translationZ = 12f
                     deviceCard.elevation = 12f
                 } else {
-                    deviceCard.scaleX = 1.0f
-                    deviceCard.scaleY = 1.0f
+                    deviceCard.animate().scaleX(1.0f).scaleY(1.0f).setDuration(120).start()
+                    deviceCard.translationZ = 0f
                     deviceCard.elevation = 0f
                 }
             }
