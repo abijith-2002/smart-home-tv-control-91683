@@ -1,0 +1,17 @@
+<resources>
+    <!-- Device card icon for high density -->
+    <dimen name="device_icon_size">82dp</dimen>
+    <dimen name="device_icon_padding">10dp</dimen>
+    
+    <!-- Switch styling for high density -->
+    <dimen name="switch_width">52dp</dimen>
+    <dimen name="switch_height">28dp</dimen>
+    
+    <!-- Sidebar for high density -->
+    <dimen name="sidebar_icon_touch_target">66dp</dimen>
+    <dimen name="sidebar_icon_padding">15dp</dimen>
+    
+    <!-- Icon sizes for high density -->
+    <dimen name="icon_size">52dp</dimen>
+    <dimen name="icon_padding">8dp</dimen>
+</resources>

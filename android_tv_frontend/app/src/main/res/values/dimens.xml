@@ -4,7 +4,7 @@
     
     <!-- Card styling -->
     <dimen name="card_corner_radius">32dp</dimen>
-    <dimen name="card_padding">25dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
     
     <!-- Switch styling -->
     <dimen name="switch_corner_radius">80dp</dimen>
@@ -51,9 +51,9 @@
     <!-- Slightly reduced height and increased margins to allow focus elevation/shadow room -->
     <dimen name="device_card_height">188dp</dimen>
 
-    <!-- Inter-card margins (further reduced for tighter grid spacing): reduce horizontal/vertical gaps while preserving focus shadow room -->
-    <dimen name="device_card_margin">4dp</dimen>
-    <dimen name="device_card_margin_large_focus_space">10dp</dimen>
+    <!-- Inter-card margins (minimal for tighter grid spacing) -->
+    <dimen name="device_card_margin">2dp</dimen>
+    <dimen name="device_card_margin_large_focus_space">8dp</dimen>
 
     <!-- Icon placement -->
     <dimen name="device_icon_bottom_margin">10dp</dimen>
@@ -65,7 +65,7 @@
     <!-- New: spacing between device icon area and text row (when horizontal alignment is used) -->
     <dimen name="device_icon_text_spacing">16dp</dimen>
 
-    <!-- New: RecyclerView grid padding/gap tokens (reduced for tighter spacing) -->
-    <dimen name="grid_horizontal_padding">6dp</dimen>
-    <dimen name="grid_vertical_padding">4dp</dimen>
+    <!-- RecyclerView grid padding (minimal for tighter spacing) -->
+    <dimen name="grid_horizontal_padding">4dp</dimen>
+    <dimen name="grid_vertical_padding">2dp</dimen>
 </resources>
