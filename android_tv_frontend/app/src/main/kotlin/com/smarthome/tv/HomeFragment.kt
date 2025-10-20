@@ -65,11 +65,11 @@ class HomeFragment : Fragment() {
         val gridLayoutManager = GridLayoutManager(requireContext(), 3)
         devicesRecyclerView.layoutManager = gridLayoutManager
         
-        // Add custom spacing decoration for tighter control
+        // Add custom spacing decoration with optimized gaps
         val spacingPx = resources.getDimensionPixelSize(R.dimen.device_card_margin)
         val itemDecoration = GridSpacingItemDecoration(
             spanCount = 3,
-            spacing = spacingPx / 2, // Use half the margin for inter-item spacing
+            spacing = spacingPx, // Use full margin for consistent inter-item spacing
             includeEdge = false
         )
         devicesRecyclerView.addItemDecoration(itemDecoration)

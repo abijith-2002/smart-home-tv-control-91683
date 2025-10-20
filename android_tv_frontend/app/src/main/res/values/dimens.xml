@@ -16,13 +16,13 @@
     <dimen name="icon_padding">6dp</dimen>
 
     <!-- Sidebar specific icon touch target and padding for pill -->
-    <dimen name="sidebar_icon_touch_target">60dp</dimen>
-    <dimen name="sidebar_icon_padding">13dp</dimen>
-    <dimen name="sidebar_glyph_size">35dp</dimen>
+    <dimen name="sidebar_icon_touch_target">56dp</dimen>
+    <dimen name="sidebar_icon_padding">11dp</dimen>
+    <dimen name="sidebar_glyph_size">32dp</dimen>
 
     <!-- Device card icon -->
-    <dimen name="device_icon_size">74dp</dimen>
-    <dimen name="device_icon_padding">8dp</dimen>
+    <dimen name="device_icon_size">68dp</dimen>
+    <dimen name="device_icon_padding">6dp</dimen>
     
     <!-- Margins and spacing -->
     <dimen name="margin_small">6dp</dimen>
@@ -48,24 +48,24 @@
     <dimen name="count_badge_padding">8dp</dimen>
     
     <!-- Device card specific -->
-    <!-- Slightly reduced height and increased margins to allow focus elevation/shadow room -->
-    <dimen name="device_card_height">188dp</dimen>
+    <!-- Optimized height with focus shadow headroom -->
+    <dimen name="device_card_height">180dp</dimen>
 
-    <!-- Inter-card margins (minimal for tighter grid spacing) -->
-    <dimen name="device_card_margin">2dp</dimen>
-    <dimen name="device_card_margin_large_focus_space">8dp</dimen>
+    <!-- Tighter inter-card margins with focus elevation space -->
+    <dimen name="device_card_margin">6dp</dimen>
+    <dimen name="device_card_margin_large_focus_space">10dp</dimen>
 
-    <!-- Icon placement -->
-    <dimen name="device_icon_bottom_margin">10dp</dimen>
-    <dimen name="device_icon_start_margin">10dp</dimen>
+    <!-- Icon placement adjustments -->
+    <dimen name="device_icon_bottom_margin">12dp</dimen>
+    <dimen name="device_icon_start_margin">12dp</dimen>
 
-    <!-- Title positioning (baseline-friendly) -->
-    <dimen name="device_name_top_margin">16dp</dimen>
+    <!-- Title positioning optimized -->
+    <dimen name="device_name_top_margin">18dp</dimen>
 
-    <!-- New: spacing between device icon area and text row (when horizontal alignment is used) -->
-    <dimen name="device_icon_text_spacing">16dp</dimen>
+    <!-- Icon to text spacing -->
+    <dimen name="device_icon_text_spacing">14dp</dimen>
 
-    <!-- RecyclerView grid padding (minimal for tighter spacing) -->
-    <dimen name="grid_horizontal_padding">4dp</dimen>
-    <dimen name="grid_vertical_padding">2dp</dimen>
+    <!-- RecyclerView grid padding for precise spacing -->
+    <dimen name="grid_horizontal_padding">6dp</dimen>
+    <dimen name="grid_vertical_padding">4dp</dimen>
 </resources>

@@ -35,11 +35,20 @@ class GridSpacingItemDecoration(
             }
             outRect.bottom = spacing
         } else {
-            outRect.left = column * spacing / spanCount
-            outRect.right = spacing - (column + 1) * spacing / spanCount
+            // Calculate even distribution of spacing
+            val halfSpacing = spacing / 2
+            
+            // Apply consistent horizontal spacing
+            outRect.left = if (column == 0) 0 else halfSpacing
+            outRect.right = if (column == spanCount - 1) 0 else halfSpacing
+            
+            // Apply vertical spacing (skip top for first row)
             if (position >= spanCount) {
                 outRect.top = spacing
             }
+            
+            // Reserve bottom space for focus elevation
+            outRect.bottom = halfSpacing
         }
     }
 }
