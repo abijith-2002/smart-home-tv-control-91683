@@ -61,4 +61,5 @@
         <item name="thumbTint">@drawable/switch_thumb_selector</item>
         <item name="android:background">@drawable/switch_track_border</item>
     </style>
+    <!-- Ensure no ripple/white mask on TV icons at night as well -->
 </resources>
